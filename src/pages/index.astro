@@ -1,0 +1,208 @@
+---
+ import Header from "../components/Header.astro";
+import Hero1 from "../components/forsidecompo/Hero1.astro";
+import Topafsnit from "../components/forsidecompo/Topafsnit.astro";
+import Galleri from "../components/forsidecompo/Galleri.astro";
+import Baeredygtighed from "../components/forsidecompo/Baeredygtighed.astro";
+import Proces from "../components/forsidecompo/Proces.astro";
+import Instagram from "../components/forsidecompo/Insta.astro";
+import Anmeldelser from "../components/Anmeldelser.astro";
+import Slutcta from "../components/Slutcta.astro";
+import Nyhedsbrev from "../components/Nyhedsbrev.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+---
+<MainLayout title="Flow by Flowering">
+	<Header></Header>
+	<Hero1></Hero1>
+	<Topafsnit></Topafsnit>
+	<Galleri></Galleri>
+	<Baeredygtighed></Baeredygtighed>
+	<Proces></Proces>
+	<Anmeldelser></Anmeldelser>
+	<Instagram></Instagram>
+	<Slutcta></Slutcta>
+	<Nyhedsbrev></Nyhedsbrev>
+</MainLayout>
+
+
+	<!-- <article class="max-w-screen-xl mx-auto">
+		<div class="prose">
+		<h1 class="text-xlarge">Design system!</h1>
+		<p>Tailwind konfigureret til at følge Birgittes <a href="
+https://www.figma.com/design/GK1F375GejhwIkOHADf6Rn/Dansestudiet_html_to_css-%2B-designsystem?node-id=6806-2&t=9pE0OOaxiPeTTIVG-1">design system</a></p>
+		</div>
+		<section>
+			<h2 class="text-large font-semibold mt-lg">Typografi</h2>
+			<h3 class="text-small font-semibold mt-sm">Størrelse</h3>
+				<div class="flex flex-col  [&>p]:place-content-center gap-xxs max-w-9xl">
+					<p>Brødtekst</p>
+					<p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae rerum, minima molestias doloribus excepturi ab reprehenderit placeat dignissimos quia ratione deserunt unde, similique, vitae fuga nulla veniam architecto quaerat. Maiores.</p>
+					<p>Konsultativ tekst</p>
+					<p class="text-konsultativ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae rerum, minima molestias doloribus excepturi ab reprehenderit placeat dignissimos quia ratione deserunt unde, similique, vitae fuga nulla veniam architecto quaerat. Maiores.</p>
+					<p class="text-small">Small</p>
+					<p class="text-medium">Medium</p>
+					<p class="text-large">Large</p>
+					<p class="text-xlarge">Xlarge</p>
+				</div>
+			<h3 class="text-small font-semibold mt-sm">Vægt</h3>
+				<div class="flex flex-col  [&>p]:place-content-center gap-xxs">
+					<p class="font-light">Light</p>
+					<p class="font-regular">Regular</p>
+					<p class="font-semibold">Semibold</p>
+				</div>
+		</section>
+		<section>
+			<h2 class="text-large font-semibold mt-lg">Farver</h2>
+			<h3 class="text-small font-semibold mt-sm">Red</h3>
+				<div class="flex [&>p]:text-center [&>p]:place-content-center">
+					<p class="w-lg h-lg bg-red-50">50</p>
+					<p class="w-lg h-lg bg-red-100">100</p>
+					<p class="w-lg h-lg bg-red-200">200</p>
+					<p class="w-lg h-lg bg-red-300">300</p>
+					<p class="w-lg h-lg bg-red-400">400</p>
+					<p class="w-lg h-lg bg-red-500 text-neutral-50">500</p>
+					<p class="w-lg h-lg bg-red-600 text-neutral-50">600</p>
+					<p class="w-lg h-lg bg-red-700 text-neutral-50">700</p>
+					<p class="w-lg h-lg bg-red-800 text-neutral-50">800</p>
+					<p class="w-lg h-lg bg-red-900 text-white">900</p>
+				</div>
+			<h3 class="text-small font-semibold mt-sm">Blue</h3>
+				<div class="flex [&>p]:text-center [&>p]:place-content-center">
+					<p class="w-lg h-lg bg-blue-50">50</p>
+					<p class="w-lg h-lg bg-blue-100">100</p>
+					<p class="w-lg h-lg bg-blue-200">200</p>
+					<p class="w-lg h-lg bg-blue-300">300</p>
+					<p class="w-lg h-lg bg-blue-400">400</p>
+					<p class="w-lg h-lg bg-blue-500 text-neutral-50">500</p>
+					<p class="w-lg h-lg bg-blue-600 text-neutral-50">600</p>
+					<p class="w-lg h-lg bg-blue-700 text-neutral-50">700</p>
+					<p class="w-lg h-lg bg-blue-800 text-neutral-50">800</p>
+					<p class="w-lg h-lg bg-blue-900 text-white">900</p>
+				</div>
+			<h3 class="text-small font-semibold mt-sm">Yellow</h3>
+				<div class="flex [&>p]:text-center [&>p]:place-content-center">
+					<p class="w-lg h-lg bg-yellow-50">50</p>
+					<p class="w-lg h-lg bg-yellow-100">100</p>
+					<p class="w-lg h-lg bg-yellow-200">200</p>
+					<p class="w-lg h-lg bg-yellow-300">300</p>
+					<p class="w-lg h-lg bg-yellow-400">400</p>
+					<p class="w-lg h-lg bg-yellow-500 text-neutral-50">500</p>
+					<p class="w-lg h-lg bg-yellow-600 text-neutral-50">600</p>
+					<p class="w-lg h-lg bg-yellow-700 text-neutral-50">700</p>
+					<p class="w-lg h-lg bg-yellow-800 text-neutral-50">800</p>
+					<p class="w-lg h-lg bg-yellow-900 text-white">900</p>
+				</div>
+			<h3 class="text-small font-semibold mt-sm">Neutral</h3>
+				<div class="flex [&>p]:text-center [&>p]:place-content-center">
+					<p class="w-lg h-lg bg-neutral-50">50</p>
+					<p class="w-lg h-lg bg-neutral-100">100</p>
+					<p class="w-lg h-lg bg-neutral-200">200</p>
+					<p class="w-lg h-lg bg-neutral-300">300</p>
+					<p class="w-lg h-lg bg-neutral-400">400</p>
+					<p class="w-lg h-lg bg-neutral-500 text-neutral-50">500</p>
+					<p class="w-lg h-lg bg-neutral-600 text-neutral-50">600</p>
+					<p class="w-lg h-lg bg-neutral-700 text-neutral-50">700</p>
+					<p class="w-lg h-lg bg-neutral-800 text-neutral-50">800</p>
+					<p class="w-lg h-lg bg-neutral-900 text-white">900</p>
+				</div>	
+		</section>
+		<section>
+			<h2 class="text-large font-semibold mt-lg">Spacing</h2>
+			<h3 class="text-small font-semibold mt-sm">Spacing</h3>
+				<div class="flex flex-col [&>p]:text-center [&>p]:place-content-center gap-xxs">
+					<p class="w-xxs h-lg bg-blue-300">xxs</p>
+					<p class="w-xs h-lg bg-blue-300">xs</p>
+					<p class="w-s h-lg bg-blue-300">s</p>
+					<p class="w-sm h-lg bg-blue-300">sm</p>
+					<p class="w-m h-lg bg-blue-300">m</p>
+					<p class="w-ml h-lg bg-blue-300">ml</p>
+					<p class="w-lg h-lg bg-blue-300">lg</p>
+					<p class="w-xl h-lg bg-blue-300">xl</p>
+					<p class="w-2xl h-lg bg-blue-300">2xl</p>
+					<p class="w-3xl h-lg bg-blue-300">3xl</p>
+					<p class="w-4xl h-lg bg-blue-300">4xl</p>
+					<p class="w-5xl h-lg bg-blue-300">5xl</p>
+					<p class="w-6xl h-lg bg-blue-300">6xl</p>
+					<p class="w-7xl h-lg bg-blue-300">7xl</p>
+					<p class="w-8xl h-lg bg-blue-300">8xl</p>
+					<p class="w-9xl h-lg bg-blue-300">9xl</p>
+				</div>
+		</section>
+
+		<section>
+			<h2 class="text-large font-semibold mt-lg">Borders</h2>
+			<h3 class="text-small font-semibold mt-sm">Border width</h3>
+				<div class="flex gap-xxs [&>p]:text-center [&>p]:place-content-center">
+					<p class="w-lg h-lg border-0 border-blue-500">0</p>
+					<p class="w-lg h-lg border border-blue-500">default</p>
+					<p class="w-lg h-lg border-2 border-blue-500">2</p>
+					<p class="w-lg h-lg border-3 border-blue-500">3</p>
+					<p class="w-lg h-lg border-4 border-blue-500">4</p>				
+				</div>
+			<h3 class="text-small font-semibold mt-sm">Border radius</h3>
+				<div class="flex gap-xxs [&>p]:text-center [&>p]:place-content-center">
+					<p class="w-4xl h-4xl border-0 border-blue-500 rounded-none">None</p>
+					<p class="w-4xl h-4xl border border-blue-500 rounded-sm">Small</p>
+					<p class="w-4xl h-4xl border-2 border-blue-500 rounded">Default</p>
+					<p class="w-4xl h-4xl border-3 border-blue-500 rounded-md">Medium</p>
+					<p class="w-4xl h-4xl border-4 border-blue-500 rounded-lg">Large</p>	
+					<p class="w-4xl h-4xl border-4 border-blue-500 rounded-full">Full</p>				
+				</div>
+			<h3 class="text-small font-semibold mt-sm">Blue</h3>
+				<div class="flex [&>p]:text-center [&>p]:place-content-center">
+					<p class="w-lg h-lg bg-blue-50">50</p>
+					<p class="w-lg h-lg bg-blue-100">100</p>
+					<p class="w-lg h-lg bg-blue-200">200</p>
+					<p class="w-lg h-lg bg-blue-300">300</p>
+					<p class="w-lg h-lg bg-blue-400">400</p>
+					<p class="w-lg h-lg bg-blue-500 text-neutral-50">500</p>
+					<p class="w-lg h-lg bg-blue-600 text-neutral-50">600</p>
+					<p class="w-lg h-lg bg-blue-700 text-neutral-50">700</p>
+					<p class="w-lg h-lg bg-blue-800 text-neutral-50">800</p>
+					<p class="w-lg h-lg bg-blue-900 text-white">900</p>
+				</div>
+			<h3 class="text-small font-semibold mt-sm">Yellow</h3>
+				<div class="flex [&>p]:text-center [&>p]:place-content-center">
+					<p class="w-lg h-lg bg-yellow-50">50</p>
+					<p class="w-lg h-lg bg-yellow-100">100</p>
+					<p class="w-lg h-lg bg-yellow-200">200</p>
+					<p class="w-lg h-lg bg-yellow-300">300</p>
+					<p class="w-lg h-lg bg-yellow-400">400</p>
+					<p class="w-lg h-lg bg-yellow-500 text-neutral-50">500</p>
+					<p class="w-lg h-lg bg-yellow-600 text-neutral-50">600</p>
+					<p class="w-lg h-lg bg-yellow-700 text-neutral-50">700</p>
+					<p class="w-lg h-lg bg-yellow-800 text-neutral-50">800</p>
+					<p class="w-lg h-lg bg-yellow-900 text-white">900</p>
+				</div>
+			<h3 class="text-small font-semibold mt-sm">Neutral</h3>
+				<div class="flex [&>p]:text-center [&>p]:place-content-center">
+					<p class="w-lg h-lg bg-neutral-50">50</p>
+					<p class="w-lg h-lg bg-neutral-100">100</p>
+					<p class="w-lg h-lg bg-neutral-200">200</p>
+					<p class="w-lg h-lg bg-neutral-300">300</p>
+					<p class="w-lg h-lg bg-neutral-400">400</p>
+					<p class="w-lg h-lg bg-neutral-500 text-neutral-50">500</p>
+					<p class="w-lg h-lg bg-neutral-600 text-neutral-50">600</p>
+					<p class="w-lg h-lg bg-neutral-700 text-neutral-50">700</p>
+					<p class="w-lg h-lg bg-neutral-800 text-neutral-50">800</p>
+					<p class="w-lg h-lg bg-neutral-900 text-white">900</p>
+				</div>	
+		</section>
+
+		<section>
+			<h2 class="text-large font-semibold mt-lg">Shadows</h2>
+			<h3 class="text-small font-semibold mt-sm">Border width</h3>
+			<div class="flex gap-xxs [&>p]:text-center [&>p]:place-content-center">
+				<p class="w-32 h-lg border border-blue-500 shadow-drop25">Drop 25</p>
+				<p class="w-32 h-lg border border-blue-500 shadow-drop50">Drop 50</p>
+				<p class="w-32 h-lg border border-blue-500 shadow-inner25">Inner 25</p>
+				<p class="w-32 h-lg border border-blue-500 shadow-inner50">Inner 50</p>		
+			</div>
+		</section>
+
+		<section>
+			<h2 class="text-large font-semibold mt-lg">Card</h2>
+			<h3 class="text-small font-semibold mt-sm">Kommer snart;-)</h3>
+		</section>
+
+	</article> -->

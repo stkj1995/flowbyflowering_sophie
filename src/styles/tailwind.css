@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+/* WindStoneSerif Font */
+@font-face {
+  font-family: 'WindStoneSerif';
+  src: url('/fonts/WindStoneSerifPersonalUseRegular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Uppercase WindStoneSerif font */
+.uppercase-text {
+  font-family: 'WindStoneSerif', serif;
+  text-transform: uppercase;
+}
+
+/* Livvic Font */
+@font-face {
+    font-family: 'Livvic';
+    src: url('/fonts/Livvic-Regular.woff') format('woff'); /* skriv: font-LivvicRegular */
+    font-weight: 400;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'Livvic';
+    src: url('/fonts/Livvic-Medium.woff') format('woff'); /* skriv: font-LivvicMedium */
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Livvic';
+    src: url('/fonts/Livvic-Bold.woff') format('woff'); /* skriv: font-LivvicBold */
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Livvic';
+    src: url('/fonts/Livvic-Italic.woff') format('woff'); /* skriv: font-LivvicItalic */
+    font-weight: 400;
+    font-style: italic;
+}
+
+  .custom-padding {
+      @apply p-xs md:p-lg;
+    }
+}

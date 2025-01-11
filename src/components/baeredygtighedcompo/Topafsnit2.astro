@@ -1,0 +1,48 @@
+---
+import { Image } from 'astro:assets';
+import stolblomst from '../../assets/images/stolblomst.webp';
+---
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+
+<section id="Topafsnit2" class="bg-rosa-500 pl-5 pt-20 md:grid md:grid-cols-2 md:pl-16 md:pt-8 opacity-0">  
+    <!-- tekst -->
+    <div class="px-8 pl-16 pb-10 md:px-20">
+        <h2 class="text-blue-500 text-40 md:text-50 font-WindstoneSerif mb-sm md:leading-tight md:pt-20 md:text-nowrap">En grønnere blomsterindustri</h2>
+        <h3 class="text-blue-500 text-30 md:text-40 font-WindstoneSerif mb-sm md:leading-tight">Skabt med en passioneret mission</h3>
+        <p class="text-darkgreyblue-500 font-LivvicRegular text-18 md:text-18 mb-sm">Grundstenene til Flowering blev lagt i 2020. Her var det især ønsket om at skabe en blomstervirksomhed, der skulle tage højde for de mange klimaproblematikker der eksisterer i den øvrige blomsterbranche, som var drivkraften.
+            <br><br>
+            For at imødekomme det ønske er overskudsblomster blevet anvendt i vores blomsterbuketter siden dag ét. Overskudsblomster spiller forsat en væsentlig rolle i vores blomsterbuketter, hvor vi siden har tilføjet miljøcertificerede blomster og blomster fra danske blomsteravlere.  </p>
+    </div>
+
+    <!-- Billede til højre -->
+    <div class="w-full flex flex-col md:flex-row gap-2 justify-between pb-10 md:pb-">
+        <div class="w-2/2 md:w-full">
+            <Image 
+                src={stolblomst} 
+                alt="stol med pink blomster ovenpå" 
+                class="rounded-40 md:mt-20 md:mb-0 mx-auto ml-30 md:ml-10 w-[60%] h-[60%] md:w-[70%] md:h-[70%] object-cover md:object-cover"
+            />
+        </div>
+    </div>
+</section>
+
+
+<!-- Script for IntersectionObserver -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const section = document.querySelector('#Topafsnit2');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    section.classList.add('animate__animated', 'animate__fadeInUp');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        observer.observe(section);
+    });
+</script>

@@ -1,0 +1,121 @@
+---
+import { Image } from 'astro:assets';
+import Button from "../Button.astro";
+import scandilight from '../../assets/images/scandilight.webp';
+import scandioriginal from '../../assets/images/scandioriginal.webp';
+import scandiplus from '../../assets/images/scandiplus.webp';
+---
+
+<section class="pt-4 bg-rosa-500 md:px-28 md:pb-32" id="scandi">
+    <!-- TEXT -->
+    <div class="">
+        <div class="text-center md:text-center md:pb-3 md:pt-4">
+            <h2 class="text-40 pb-9 px-10 text-blue-500 font-WindstoneSerif md:px-0 md:text-50 md:pb-6">Hvilken størrelse Scandinavian kunne du tænke dig? </h2>
+            <p class="text-18 px-16 md:text-18 font-LivvicRegular text-darkgreyblue-500 md:pb-2">Vælg mellem de 3 forskellige størrelser man kan få “Scandinavian” i.
+                <br> <br> <span class="font-[700]">Klik på billederne for at se dem i større format</span><br> <span class="font-[700] md:hidden">Swipe for at finde det abonnement, du ønsker</span> </p>
+        </div>
+    </div>
+
+
+<!-- For at lave mobil først så kopier & udkommenter 1 card ad gangen og lav om på kode- Hele koden er udkommenteret under denne section -->
+    <!-- CARDS -->
+    <div class="alt flex overflow-x-auto space-x-12 gap-10 md:space-x-0 md:grid md:grid-cols-3 md:gap-10 md:overflow-x-visible justify-center">
+        
+        <div class="card1 flex-shrink-0 w-[80%] flex md:w-full md:ml-0 ">
+            <!-- Card 1 -->
+             <div class="pb-16">
+                <div class="grid place-content-center">
+                    <Image src={scandilight} alt='billede af lille buket blomster' class="w-[300px] h-[300px] rounded-40 md:w-[350px] md:h-[350px] md:rounded-40">
+                </div>
+                <div class="txt ">
+                    <h3 class="font-WindstoneSerif text-30 md:text-40 text-center py-4 text-blue-500 md:pt-2 md:pb-5">Light</h3>
+                    <!-- knap og txt -->
+                    <div class="pt-8 grid place-items-center md:grid md:place-items-center md:pt-1">
+                        <p class="font-[700] font-LivvicRegular text-darkgreyblue-500 text-18 md:text-18">fra 1.084,-</p>
+                        <a href="">
+                            <div class="pt-4 md:relative md:left-1">
+                                <div class="w-36 text-center relative  md:relative md:left-0 md:w-[150px]">
+                                    <Button 
+                                        textMobile="Vælg"
+                                        textDesktop="Vælg"
+                                        link="#Gange"
+                                        backgroundColor="#2B3D5A"
+                                        textColor="#FFF"
+                                        size="small md:large"
+                                    />
+                                </div>
+                            </div>
+                        </a>
+                    </div> 
+                </div>
+             </div>
+        </div>
+
+    <!-- Card 2 -->
+    <div class="card2 flex-shrink-0 w-[80%] md:w-full">
+        <!-- Card 2 -->
+         <div class="pb-16 ">
+            <div class="grid place-content-center">
+                <Image src={scandioriginal} alt='billede af lille buket blomster' class="w-[300px] h-[300px] rounded-40 md:w-[350px] md:h-[350px] md:rounded-40">
+            </div>
+            <div class="txt ">
+                <h3 class="font-WindstoneSerif text-30 md:text-40 text-center py-4 text-blue-500 md:pt-2md:pb-5">Original</h3>
+                <!-- knap og txt -->
+                <div class="pt-8 grid place-items-center md:grid md:place-items-center md:pt-0">
+                    <p class="font-[700] font-LivvicRegular text-darkgreyblue-500 text-18 md:text-18">fra 1.134,-</p>
+                    <a href="">
+                        <div class="pt-4 md:relative md:left-1">
+                            <div class="w-36 text-center relative  md:relative md:left-0 md:w-[150px]">
+                                <Button 
+                                    textMobile="Vælg"
+                                    textDesktop="Vælg"
+                                    link="#Gange"
+                                    backgroundColor="#2B3D5A"
+                                    textColor="#FFF"
+                                    size="small md:large"
+                                />
+                            </div>
+                        </div>
+                    </a>
+                </div> 
+            </div>
+         </div>
+    </div>
+     
+    <!-- Card 3 -->
+    <div class="card3 flex-shrink-0 w-[80%] md:w-full">
+        <!-- Card 3 -->
+         <div class="pb-16 ">
+            <div class="grid place-content-center">
+                <Image src={scandiplus} alt='billede af lille buket blomster' class="w-[300px] h-[300px] rounded-40 md:w-[350px] md:h-[350px] md:rounded-40">
+            </div>
+            <div class="txt ">
+                <h3 class="font-WindstoneSerif text-30 md:text-40 text-center py-4 text-blue-500 md:pt-2 md:pb-5">Plus</h3>
+                <!-- knap og txt -->
+                <div class="pt-8 grid place-items-center md:pt-0 md:grid md:place-items-center">
+                    <p class="font-[700] font-LivvicRegular text-darkgreyblue-500 text-18 md:text-18">fra 1.384,-</p>
+                    <a href="">
+                        <div class="pt-4 md:relative md:left-1">
+                            <div class="w-36 text-center relative  md:relative md:left-0 md:w-[150px]">
+                                <Button 
+                                    textMobile="Vælg"
+                                    textDesktop="Vælg"
+                                    link="#Gange"
+                                    backgroundColor="#2B3D5A"
+                                    textColor="#FFF"
+                                    size="small md:large"
+                                />
+                            </div>
+                        </div>
+                    </a>
+                </div> 
+            </div>
+         </div>
+    </div>
+
+    </div> 
+      
+
+</section>
+
+

@@ -1,0 +1,85 @@
+---
+import { Image } from 'astro:assets';
+import omos from '../../assets/images/omos.webp'
+import Button from '../Button.astro';
+
+---
+
+
+<section id="Omos" class="afsnit1 pl-5 md:grid md:grid-cols-2 md:px-20 md:pl-16 pt-10 md:pt-20 gap-2 bg-rosa-500">
+  <!-- tekst -->
+    <div class="mt-4 order-1">
+        <h2 class="omosh2 pb-6 pt-5 text-40 md:text-50 font-WindstoneSerif text-blue-500">Iværksætterånd i blomsterflor</h2>
+        <p class="omosp pr-8 pt-5 text-18 font-LivvicRegular text-darkgreyblue-500">Den første spire til det, som blev til Flowering.dk, blev skabt, da vores stifter, Artin, voksede op i en vaskeægte blomsterfamilie, med forældre som begge arbejdede inden for faget.
+            Kærligheden til blomster har været en stor grundsten i vores liv siden da, men også en voksende undren over, hvor stor mangel på grøn omstilling, blomsterbranchen i det hele taget har. Hvis vi gør det her rigtigt, må vi kunne skabe både omtanke for miljøet og bringe glæde, tænkte Artin, og tog fat i sin ven Johan, som også har sans for forretning og gode idéer. <br> <br> I 2020 var to unge iværksættere i gang, og Flowering.dk en realitet.
+            <br> For at tage hånd om det store blomsterspild der eksisterer i blomsterbranchen, skabte makkerparret deres helt egen version af blomsterbuketten, der udelukkende bestod af friske overskudsblomster.
+        </p>
+        <a href="/abonnement">
+            <div class="pt-9 relative md:pr-10 ">
+                <!-- <Button variant="primary" size="large">Skræddersy dit blomsterabonnement her</Button> -->
+                <div class="omosknap w-96 text-center relative left-8px md:relative md:left-0 md:w-[450px]">
+                    <Button 
+                        textMobile="Skræddersy dit abonnement"
+                        textDesktop="Skræddersy dit blomsterabonnement her"
+                        link="/abonnement"
+                        backgroundColor="#2B3D5A"
+                        textColor="#FFF"
+                        size="small md:large"
+                    />
+                </div>
+            </div>
+        </a>
+       
+    
+    </div>
+
+    <!-- img // ret billedernes højde i mobil-->
+    <div class="w-full h-auto pl-16 pr-16 pb-10 md:w-[650px] md:h-[650px] md:pt-[35px] md:relative md:right-10">
+        <Image src={omos} alt='billede af to drenge' class="omosbillede rounded-[40px] w-full h-full object-cover">
+        </div>
+
+</section>
+
+
+
+<!-- <div class="w-full h-full pl-16 pr-16 object-cover pb-10 md:w-[700px] md:h-[700px] md:pt-[35px]">
+    <img src="/src/assets/images/omos.webp" alt="" class="rounded-[40px]">
+</div> -->
+
+
+<script>
+    import { inView } from "motion";
+        
+        const elementmedanimation1 = document.querySelector(".omosbillede");
+        
+        inView(elementmedanimation1, () => {
+        
+        elementmedanimation1.classList.add("animate__animated", "animate__fadeInUp");
+        
+        }); 
+
+        const elementmedanimation2 = document.querySelector(".omosh2");
+        
+        inView(elementmedanimation2, () => {
+        
+        elementmedanimation2.classList.add("animate__animated", "animate__fadeInUp");
+        
+        }); 
+
+        const elementmedanimation3 = document.querySelector(".omosp");
+        
+        inView(elementmedanimation3, () => {
+        
+        elementmedanimation3.classList.add("animate__animated", "animate__fadeInUp");
+        
+        }); 
+
+        const elementmedanimation4 = document.querySelector(".omosknap");
+        
+        inView(elementmedanimation4, () => {
+        
+        elementmedanimation4.classList.add("animate__animated", "animate__fadeInUp");
+        
+        }); 
+
+    </script>

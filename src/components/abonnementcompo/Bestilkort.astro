@@ -1,0 +1,116 @@
+---
+import Button from "../Button.astro";
+---
+
+<section id="Bestilkort" class="min-h-screen flex flex-col items-center justify-center text-center p-4">
+  <!-- Overskrift -->
+  <h1 class="text-40 font-WindstoneSerif text-blue-500">Ønsker du et flot kort med til din bestilling?</h1>
+  <p class="text-18 font-LivvicRegular text-darkgreyblue-500 mt-2">Vælg én og klik videre</p>
+  
+  <!-- Valgmuligheder -->
+  <div class="mt-6 grid grid-cols-1 gap-5 md:gap-20 md:grid-cols-3">
+    <button id="til-normalt-kort" class="px-12 py-4 border-2 border-denimblue-500 rounded-20 text-denimblue-500 font-bold hover:bg-greyblue-500 hover:text-white hover:border-none transition duration-200">
+      Ja, normalt kort
+    </button>
+    <button id="til-julekort" class="px-12 py-4 border-2 border-denimblue-500 rounded-20 text-denimblue-500 font-bold hover:bg-greyblue-500 hover:text-white hover:border-none transition duration-200">
+      Ja, julekort
+    </button>
+    <button id="nej" class="px-12 py-4 border-2 border-darkgreyblue-500 rounded-20 text-darkgreyblue-500 font-bold hover:bg-greyblue-500 hover:text-white hover:border-none transition duration-200">
+      Nej, ellers tak
+    </button>
+  </div>
+  
+  <!-- Videre Knap -->
+  <div class="pt-4 md:mt-8 mt-10">
+    <div class="w-36 text-center mx-auto md:w-[150px]">
+      <Button 
+        id="videre-klik" 
+        textMobile="Videre"
+        textDesktop="Videre"
+        link="#Kurv" 
+        backgroundColor="#2B3D5A"
+        textColor="#FFF"
+        size="small md:large"
+      />
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const normaltKortBtn = document.getElementById("til-normalt-kort");
+  const julekortBtn = document.getElementById("til-julekort");
+  const nejBtn = document.getElementById("nej");
+  const videreKnap = document.getElementById("videre-klik");
+  const tekstfeltContainer = document.getElementById("tekstfelt-container");
+
+  // Funktion til at vise tekstfelt-container
+  function visTekstfelt() {
+    tekstfeltContainer?.classList.remove("hidden");
+  }
+
+  // Funktion til at skjule tekstfelt-container
+  function skjulTekstfelt() {
+    tekstfeltContainer?.classList.add("hidden");
+  }
+
+  // Klik på "Ja, normalt kort"
+  if (normaltKortBtn) {
+    normaltKortBtn.addEventListener("click", () => {
+      visTekstfelt();
+      normaltKortBtn.classList.add("bg-denimblue-500", "text-white", "border-none");
+      julekortBtn?.classList.remove("bg-denimblue-500", "text-white", "border-none");
+      nejBtn?.classList.remove("bg-denimblue-500", "text-white", "border-none");
+
+      // Ændr "Videre"-knappen til at springe til #Txtpaakort
+      if (videreKnap) {
+        videreKnap.setAttribute("href", "#Txtpaakort");
+      }
+    });
+  }
+
+  // Klik på "Ja, julekort"
+  if (julekortBtn) {
+    julekortBtn.addEventListener("click", () => {
+      visTekstfelt();
+      julekortBtn.classList.add("bg-denimblue-500", "text-white", "border-none");
+      normaltKortBtn?.classList.remove("bg-denimblue-500", "text-white", "border-none");
+      nejBtn?.classList.remove("bg-denimblue-500", "text-white", "border-none");
+
+      // Ændr "Videre"-knappen til at springe til #Txtpaakort
+      if (videreKnap) {
+        videreKnap.setAttribute("href", "#Txtpaakort");
+      }
+    });
+  }
+
+  // Klik på "Nej, ellers tak"
+  if (nejBtn) {
+    nejBtn.addEventListener("click", () => {
+      skjulTekstfelt();
+      nejBtn.classList.add("bg-denimblue-500", "text-white", "border-none");
+      normaltKortBtn?.classList.remove("bg-denimblue-500", "text-white", "border-none");
+      julekortBtn?.classList.remove("bg-denimblue-500", "text-white", "border-none");
+
+      // Ændr "Videre"-knappen til at springe til #Kurv
+      if (videreKnap) {
+        videreKnap.setAttribute("href", "#Kurv");
+      }
+    });
+  }
+
+  // Sørg for, at "Videre"-knappen logger korrekt href (fejlsøgning)
+  if (videreKnap) {
+    videreKnap.addEventListener("click", (e) => {
+      const currentHref = videreKnap.getAttribute("href");
+      console.log("Videre-knappen klikket. Nuværende href:", currentHref);
+
+      // Tilføjet for at sikre, at knappen navigerer korrekt
+      if (!currentHref || currentHref === "#") {
+        e.preventDefault();
+        console.warn("Videre-knappen har ingen gyldig href.");
+      }
+    });
+  }
+});
+</script>

@@ -1,0 +1,65 @@
+---
+import { Image } from 'astro:assets';
+import buket from '../../assets/images/buket.svg'
+import Button from "../Button.astro";
+---
+<section class="bg-beige-500 px-10 md:px-28 py-20 flex flex-col md:flex-row gap-20 md:gap-40 justify-center text-center">
+    <div class="md:w-2/4 content-center">
+    <h2 class="bæreh2 text-center md:text-left text-40 md:text-50 font-WindstoneSerif text-blue-500 mb-8">Vi har fokus på bæredygtighed</h2>
+    <p class=" bærep text-center md:text-left  text-darkgreyblue-500 font-LivvicRegular text-18 md:text-18">Hos os får du blomster, der er skabt med omtanke for både dig og miljøet. Vores buketter består af miljøcertificerede blomster, håndplukkede friske overskudsblomster og lokalt dyrkede blomster. 
+    <br><br> Det betyder ikke kun smukke blomster, men også <span class="font-bold">35% mindre CO2 </span> sammenlignet med konventionelle buketter.</p>
+
+    <div class="bæreknap text-center mt-10 mx-auto md:mx-0 text-nowrap w-3/4">
+    <Button 
+    textMobile="Læs mere om bæredygtighed"
+    textDesktop="Læs mere om vores fokus på bæredygtighed"
+    link="/baeredygtighed" 
+    backgroundColor="#6D7D96" 
+    textColor="#ffffff" 
+    size="small md:large"
+    additionalClasses="hover:bg-[#6D7D96]"
+    />
+</div>  
+
+</div>
+<div>
+    <Image src={buket} alt='illustrationer af blomster' class="mx-auto bærebillede"/>
+</div>
+</section>
+
+<script>
+    import { inView } from "motion";
+        
+        const elementmedanimation1 = document.querySelector(".bærebillede");
+        
+        inView(elementmedanimation1, () => {
+        
+        elementmedanimation1.classList.add("animate__animated", "animate__fadeInUp");
+        
+        }); 
+
+        const elementmedanimation2 = document.querySelector(".bæreh2");
+        
+        inView(elementmedanimation2, () => {
+        
+        elementmedanimation2.classList.add("animate__animated", "animate__fadeInUp");
+        
+        }); 
+
+        const elementmedanimation3 = document.querySelector(".bærep");
+        
+        inView(elementmedanimation3, () => {
+        
+        elementmedanimation3.classList.add("animate__animated", "animate__fadeInUp");
+        
+        }); 
+
+        const elementmedanimation4 = document.querySelector(".bæreknap");
+        
+        inView(elementmedanimation4, () => {
+        
+        elementmedanimation4.classList.add("animate__animated", "animate__fadeInUp");
+        
+        }); 
+
+    </script>

@@ -1,0 +1,77 @@
+---
+import Image from "astro/components/Image.astro"
+import datavisimg from '../../assets/images/datavisimg.webp'
+import Button from "../Button.astro"
+---
+
+
+<section class="pt-12 pl-5 md:grid md:grid-cols-2 md:px-20 md:pl-16 md:pt-28 md:pb-14 gap-2 bg-rosa-500">
+    <!-- tekst -->
+      <div class="px-8 pl-16 pb-16">
+          <h2 class="datah2 pb-6 pt-5 text-40 md:text-50 font-WindstoneSerif text-blue-500">Skræddersyede buketter med mindre spild</h2>
+          <p class="datap pr-8 pt-5 text-18 font-LivvicRegular text-darkgreyblue-500">Siden allerførste dag har vores livsmål været, at glæden ved at sende blomster også skal være til glæde for vores verden og naturen. Det er et vedvarende løfte, som vi opretholder med stor lyst ved at bidrage til en grønnere fremtid igennem ethvert led i blomsterindustrien.
+            <br> <br> Derfor har et godkendt dansk teknologisk institut foretaget en dybdegående komparativ livscyklusanalyse. Analysen dokumenterer, blandt andet, at <span class="font-[700]">vores blomsters CO2-aftryk er 35% lavere end konventionelt dyrkede blomster. </span></p>
+          <div class="md:pt-12 pt-10 text-left md:text-left">
+          <div class="class">
+            <a href="/baeredygtighed">
+              <div class="pr-10 pt-1 md:pr-10">
+                <div class="dataknap w-56 text-center relative left-[8px] md:relative md:left-0 md:w-[450px] md:text-left">
+                  <Button 
+                      textMobile="Læs mere"
+                      textDesktop="Læs mere om bæredygtighed her"
+                      link="/baeredygtighed"
+                      backgroundColor="#6D7D96"
+                      textColor="#FFF"
+                      size="small md:large"
+                  />
+              </div>
+            </div>
+            </a>
+          </div>
+          </div>
+      </div>
+  
+      <!-- img // ret billedernes højde i mobil-->
+      <div class="w-full h-auto pl-16 pr-16 pb-10 md:w-[600px] md:h-[570px] md:pt-[35px] md:relative md:left-5">
+        <Image src={datavisimg} alt='datavisualisering med blomst og fod' class="databillede rounded-[40px] w-full h-full object-cover md:object-cover">
+      </div>
+
+  </section>
+
+
+<script>
+  import { inView } from "motion";
+      
+      const elementmedanimation1 = document.querySelector(".databillede");
+      
+      inView(elementmedanimation1, () => {
+      
+      elementmedanimation1.classList.add("animate__animated", "animate__fadeInUp");
+      
+      }); 
+
+      const elementmedanimation2 = document.querySelector(".datah2");
+      
+      inView(elementmedanimation2, () => {
+      
+      elementmedanimation2.classList.add("animate__animated", "animate__fadeInUp");
+      
+      }); 
+
+      const elementmedanimation3 = document.querySelector(".datap");
+      
+      inView(elementmedanimation3, () => {
+      
+      elementmedanimation3.classList.add("animate__animated", "animate__fadeInUp");
+      
+      }); 
+
+      const elementmedanimation4 = document.querySelector(".dataknap");
+      
+      inView(elementmedanimation4, () => {
+      
+      elementmedanimation4.classList.add("animate__animated", "animate__fadeInUp");
+      
+      }); 
+
+  </script>

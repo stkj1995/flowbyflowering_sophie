@@ -1,0 +1,122 @@
+---
+import { Image } from 'astro:assets';
+import Button from "../Button.astro";
+import loebende from '../../assets/images/loebende.svg';
+import forudbetalt from '../../assets/images/forudbetalt.svg';
+
+
+---
+
+<section id="Vaelg" class="bg-rosa-500 md:px-32 md:pb-28 pt-10 md:pt-20">
+    <!-- TEXT -->
+    <div class="class">
+        <div class="text-center md:pb-5 ">
+            <h2 class="introh2 text-40 pb-9 text-blue-500 font-WindstoneSerif md:text-50 md:pb-6">Vælg et bæredygtigt abonnement</h2>
+            <p class="introp text-18 px-16 md:text-18 pb-8 font-LivvicRegular text-darkgreyblue-500 md:pb-8">Kunne du tænke dig blomster leveret fast? <br> Med vores abonnement vælger du stilen, og vi sørger for blomsterne – altid en skøn overraskelse. <br> Vælg mellem Classic, Biedermeier eller Scandinavian stil. <br> <span class="font-[700] md:hidden">Swipe for at finde det abonnement, du ønsker</span> </p>
+        </div>
+    </div>
+
+    <!-- CARDS -->
+    <div class="alt flex overflow-x-auto space-x-12 gap-10 md:gap-0 md:space-x-0 md:grid md:grid-cols-2 md:overflow-x-visible">
+        
+        <div class="card1 flex-shrink-0 w-[80%] md:w-full flex ml-16 md:ml-0">
+            <!-- Card 1 -->
+             <div class="pb-16 pt-4 ab1">
+                <div class="grid place-content-center">
+                    <Image src={loebende} alt='billede af lille buket blomster' class="w-[300px] h-[300px] rounded-40 md:w-[250px] md:h-[250px] md:rounded-40">
+                </div>
+                <div class="txt ">
+                    <h3 class="font-WindstoneSerif text-30 md:text-40 text-center py-4 text-blue-500 md:pt-5 md:pb-5">Løbende abonnement</h3>
+                    <p class="px-10 pl-16 font-LivvicRegular text-center text-18 md:text-18 text-darkgreyblue-500 md:px-4 md:mx-20 md:pl-2 md:pb-4 md:text-center">Dette er et abonnement der fornyer sig selv, og pengene bliver trukket så ofte du ønsker. 
+                        Det kan opsiges senest 2 dage inden din næste forsendelse</p>
+                    <!-- knap og txt -->
+                    <div class="pt-8 grid place-items-center md:grid md:place-items-center md:pt-2">
+                        <a href="">
+                            <div class="pt-4 md:relative md:left-1">
+                                <div class="w-36 text-center relative  md:relative md:left-0 md:w-[150px]">
+                                    <Button 
+                                        textMobile="Vælg"
+                                        textDesktop="Vælg"
+                                        link=""
+                                        backgroundColor="#2B3D5A"
+                                        textColor="#FFF"
+                                        size="small md:large"
+                                    />
+                                </div>
+                            </div>
+                        </a>
+                    </div> 
+                </div>
+             </div>
+        </div>
+
+    <!-- Card 2 -->
+    <div class="ab2 card2 flex-shrink-0 w-[80%] md:w-full">
+        <!-- Card 2 -->
+         <div class="pb-16 pt-4">
+            <div class="grid place-content-center ">
+                <Image src={forudbetalt} alt='billede af lille buket blomster' class="w-[300px] h-[300px] rounded-40 md:w-[250px] md:h-[250px] md:rounded-40">
+            </div>
+            <div class="txt ">
+                <h3 class="font-WindstoneSerif text-30 md:text-40 text-center py-4 text-blue-500 md:pt-5 md:pb-5">Forudbetalt abonnement</h3>
+                <p class="px-10 pl-16 font-LivvicRegular text-center text-18 md:text-18 md:px-4 md:mx-20 text-darkgreyblue-500 md:pl-2 md:pb-4 md:text-center">Dette er et abonnement der automatisk stopper efter den forudbetalte periode du har valgt. 
+                    Det er oplagt som gave til en du holder af. </p>
+                <!-- knap og txt -->
+                <div class="pt-8 grid place-items-center md:grid md:place-items-center md:pt-2">
+                    <a href="">
+                        <div class="pt-4 md:relative md:left-1">
+                            <div class="w-36 text-center relative  md:relative md:left-0 md:w-[150px]">
+                                <Button 
+                                    textMobile="Vælg"
+                                    textDesktop="Vælg"
+                                    link="#buket"
+                                    backgroundColor="#2B3D5A"
+                                    textColor="#FFF"
+                                    size="small md:large"
+                                />
+                            </div>
+                        </div>
+                    </a>
+                </div> 
+            </div>
+         </div>
+    </div>
+</section>
+
+
+
+<script>
+    import { inView } from "motion";
+        
+        const elementmedanimation1 = document.querySelector(".introh2");
+        
+        inView(elementmedanimation1, () => {
+        
+        elementmedanimation1.classList.add("animate__animated", "animate__fadeInUp");
+        
+        }); 
+
+        const elementmedanimation2 = document.querySelector(".introp");
+        
+        inView(elementmedanimation2, () => {
+        
+        elementmedanimation2.classList.add("animate__animated", "animate__fadeInUp");
+        
+        }); 
+
+        const elementmedanimation3 = document.querySelector(".ab2");
+        
+        inView(elementmedanimation3, () => {
+        
+        elementmedanimation3.classList.add("animate__animated", "animate__fadeInUp");
+        
+        }); 
+
+        const elementmedanimation4 = document.querySelector(".ab1");
+        
+        inView(elementmedanimation4, () => {
+        
+        elementmedanimation4.classList.add("animate__animated", "animate__fadeInUp");
+        
+        }); 
+</script>

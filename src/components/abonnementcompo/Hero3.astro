@@ -1,0 +1,18 @@
+---
+import { Image } from 'astro:assets';
+import scoll_pil from '../../assets/images/scoll_pil.webp'
+import hero3 from '../../assets/images/hero3.webp'
+---
+
+
+<div class="relative">
+    <Image 
+              src={hero3} alt='billede af lilla blomst' class="h-screen md:max-h-[600px] md:w-screen object-cover"/>
+  
+  <div class="absolute inset-0 md:ml-16 md:mt-12 m-20 mt-52 md:m-0">
+  <h1 class="text-50 md:text-200 font-WindstoneSerif mb-[-10px] md:mb-[-130px] mb-10 text-blue-500">Skræddersy dit</h1>
+  <h1 class="text-50 md:text-200 font-WindstoneSerif md:mb-[-40px] mb-10 text-blue-500">abonnement</h1>
+  <h2 class="text-40 md:text-50 font-WindstoneSerif text-blue-500">Scroll ned for at komme i gang</h2>
+  </div>
+  
+  </div>

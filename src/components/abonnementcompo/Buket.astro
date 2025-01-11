@@ -1,0 +1,253 @@
+---
+import { Image } from 'astro:assets';
+import Button from "../Button.astro";
+import classicbuket from '../../assets/images/classicbuket.webp';
+import biedermeier from '../../assets/images/biedermeyer.webp';
+import scandinavian from '../../assets/images/scandinavian.webp';
+---
+
+<section class="pt-14 md:pt-0 bg-rosa-500 md:px-28 md:pb-28" id="buket">
+    <!-- TEXT -->
+    <div class="class">
+        <div class="text-center md:text-center md:pt-2">
+            <h2 class="text-40 pb-9 text-blue-500 font-WindstoneSerif md:text-50 md:pb-6">Vælg din favoritbuket</h2>
+            <p class="text-18 px-16 md:text-18 font-LivvicRegular text-darkgreyblue-500 ">Vælg mellem tre smukke stilarter, der passer til enhver smag og lejlighed. <br> Uanset om du ønsker en klassisk buket, en luftig markbuket eller et stilrent skandinavisk design, har vi noget for dig.
+                <br> <br> <span class="font-[700]">Klik på billederne for at se dem i større format</span><br> <span class="font-[700] md:hidden">Swipe for at finde det abonnement, du ønsker</span> </p>
+               
+        </div>
+    </div>
+
+
+<!-- For at lave mobil først så kopier & udkommenter 1 card ad gangen og lav om på kode- Hele koden er udkommenteret under denne section -->
+    <!-- CARDS -->
+    <div class="alt flex overflow-x-auto space-x-12 gap-10 md:space-x-0 md:grid md:grid-cols-3 md:gap-10 md:overflow-x-visible">
+        
+        <div class="card1 flex-shrink-0 w-[80%] md:w-full flex ml-16 md:ml-0">
+            <!-- Card 1 -->
+             <div class="pb-16 pt-4">
+                <div class="grid place-content-center">
+                    <Image src={classicbuket} alt='billede af lille buket blomster' class="w-[300px] h-[300px] rounded-40 md:w-[350px] md:h-[350px] md:rounded-40">
+                </div>
+                <div class="txt ">
+                    <h3 class="font-WindstoneSerif text-30 md:text-40 text-center py-4 text-blue-500 md:pt-3 md:pb-2">Classic</h3>
+                    <p class="px-10 pl-16 font-LivvicRegular text-center text-18 md:text-18 text-darkgreyblue-500 md:px-4 md:pl-2 md:pb-4 md:text-center">En tætbundet buket har siden 1945 været danskernes foretrukne gaveartikel. En Classic er rund, lav og tætbundet og en vaskeægte klassiker.</p>
+                    <!-- knap og txt -->
+                    <div class="pt-8 grid place-items-center md:grid md:place-items-center md:pt-4">
+                        <p class="font-[700] font-LivvicRegular text-darkgreyblue-500 text-18 md:text-18">fra 994,-</p>
+                        <a href="">
+                            <div class="pt-4 md:relative md:left-1">
+                                <div class="w-36 text-center relative  md:relative md:left-0 md:w-[150px]">
+                                    <Button 
+                                        textMobile="Vælg"
+                                        textDesktop="Vælg"
+                                        link="#classic"
+                                        backgroundColor="#2B3D5A"
+                                        textColor="#FFF"
+                                        size="small md:large"
+                                    />
+                                </div>
+                            </div>
+                        </a>
+                    </div> 
+                </div>
+             </div>
+        </div>
+
+    <!-- Card 2 -->
+    <div class="card2 flex-shrink-0 w-[80%] md:w-full">
+        <!-- Card 2 -->
+         <div class="pb-16 pt-4">
+            <div class="grid place-content-center">
+                <Image src={biedermeier} alt='billede af lille buket blomster' class="w-[300px] h-[300px] rounded-40 md:w-[350px] md:h-[350px] md:rounded-40">
+            </div>
+            <div class="txt ">
+                <h3 class="font-WindstoneSerif text-30 md:text-40 text-center py-4 text-blue-500 md:pt-3 md:pb-2">Biedermeier</h3>
+                <p class="px-10 pl-16 font-LivvicRegular text-center text-18 md:text-18 md:px-4 text-darkgreyblue-500 md:pl-2 md:pb-4 md:text-center">Vores take på en Biedermeier-buket byder på en smuk sammensætning af luftige, vilde markblomster. En buket, der virkelig trender og for alvor bringer naturen ind i hjemmet.</p>
+                <!-- knap og txt -->
+                <div class="pt-8 grid place-items-center md:grid md:place-items-center md:pt-4">
+                    <p class="font-[700] font-LivvicRegular text-darkgreyblue-500 text-18 md:text-18">fra 1.054,-</p>
+                    <a href="">
+                        <div class="pt-4 md:relative md:left-1">
+                            <div class="w-36 text-center relative  md:relative md:left-0 md:w-[150px]">
+                                <Button 
+                                    textMobile="Vælg"
+                                    textDesktop="Vælg"
+                                    link="#bieder"
+                                    backgroundColor="#2B3D5A"
+                                    textColor="#FFF"
+                                    size="small md:large"
+                                />
+                            </div>
+                        </div>
+                    </a>
+                </div> 
+            </div>
+         </div>
+    </div>
+     
+    <!-- Card 3 -->
+    <div class="card3 flex-shrink-0 w-[80%] md:w-full">
+        <!-- Card 3 -->
+         <div class="pb-16 pt-4">
+            <div class="grid place-content-center">
+                <Image src={scandinavian} alt='billede af lille buket blomster' class="w-[300px] h-[300px] rounded-40 md:w-[350px] md:h-[350px] md:rounded-40">
+            </div>
+            <div class="txt ">
+                <h3 class="font-WindstoneSerif text-30 md:text-40 text-center py-4 text-blue-500 md:pt-3 md:pb-2">Scandinavian</h3>
+                <p class="px-10 pl-16 font-LivvicRegular text-center text-18 md:text-18 md:px-4 text-darkgreyblue-500 md:pb-4 md:text-center">Flowerings Scandinavian er skabt ud fra Skandinaviske tendenser med skarpe, rene linjer. Et helt enkelt udtryk, der skaber ro for øjet og definition til hjemmet.</p>
+                <!-- knap og txt -->
+                <div class="pt-8 grid place-items-center md:pt-4 md:grid md:place-items-center">
+                    <p class="font-[700] font-LivvicRegular text-darkgreyblue-500 text-18 md:text-18">fra 1.084,-</p>
+                    <a href="">
+                        <div class="pt-4 md:relative md:left-1">
+                            <div class="w-36 text-center relative  md:relative md:left-0 md:w-[150px]">
+                                <Button 
+                                    textMobile="Vælg"
+                                    textDesktop="Vælg"
+                                    link="#scandi"
+                                    backgroundColor="#2B3D5A"
+                                    textColor="#FFF"
+                                    size="small md:large"
+                                />
+                            </div>
+                        </div>
+                    </a>
+                </div> 
+            </div>
+         </div>
+    </div>
+
+    </div> 
+      
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- <div class="md:pt-6 md:relative md:-left-2">
+    <p class="font-[700] font-LivvicRegular text-darkgreyblue-500 text-20 md:pl-[125px]">fra 994,-</p>
+
+    <a href="">
+        <div class="pt-4 relative left-3 md:pl-[78px] ">
+            <div class="w-96 text-center relative left-8  md:relative md:left-0 md:w-[150px]">
+                <Button 
+                    textMobile="Vælg"
+                    textDesktop="Vælg"
+                    link=""
+                    backgroundColor="#2B3D5A"
+                    textColor="#FFF"
+                    size="small md:large"
+                />
+            </div>
+        </div>
+    </a>
+</div> -->
+
+
+
+<!-- KODEN FOR DESKTOP CARDS!!!! -->
+
+  <!-- CARDS -->
+  <!-- <div class="alt md:grid md:grid-cols-3 md:pl-7 md:gap-9">
+    <div class="card1 "> -->
+        <!-- Card 1 -->
+         <!-- <div class="">
+            <div class="">
+                <Image src={classicbuket} alt='billede af lille buket blomster' class="w-80 h-80 rounded-40 md:w-80 md:h-80 md:rounded-40">
+            </div> -->
+            <!-- <div class="txt ">
+                <h3 class="font-WindstoneSerif md:text-30 text-blue-500 md:pl-28 md:pt-5 md:pb-5">Classic</h3>
+                <p class="font-LivvicRegular text-20 text-darkgreyblue-500 md:pl-2 md:pb-4">En tætbundet buket har siden 1945 været danskernes foretrukne gaveartikel. <br> En Classic er rund, lav og tætbundet <br> og en vaskeægte klassiker.</p> -->
+                <!-- knap og txt -->
+                <!-- <div class="md:pt-4 md:pl-20">
+                    <p class="font-[700] font-LivvicRegular text-darkgreyblue-500 text-20 md:pl-[38px]">fra 994,-</p>
+                    <a href="">
+                        <div class="pt-4 md:relative md:left-1">
+                            <div class="w-96 text-center relative left-8  md:relative md:left-0 md:w-[150px]">
+                                <Button 
+                                    textMobile="Vælg"
+                                    textDesktop="Vælg"
+                                    link=""
+                                    backgroundColor="#2B3D5A"
+                                    textColor="#FFF"
+                                    size="small md:large"
+                                />
+                            </div> -->
+                        <!-- </div>
+                    </a>
+                </div> 
+            </div>
+         </div>
+    </div> -->
+
+<!-- Card 2 -->
+    <!-- <div class="card2"> -->
+        <!-- Card 2 -->
+         <!-- <div class="">
+            <div class="">
+                <Image src={biedermeier} alt='billede af lille buket blomster' class="md:w-80 md:h-80 md:rounded-40">
+            </div>
+            <div class="txt ">
+                <h3 class="font-WindstoneSerif md:text-30 text-blue-500 md:pl-24 md:pt-5 md:pb-5">Biedermeier</h3>
+                <p class="font-LivvicRegular text-20 text-darkgreyblue-500 md:pl-2 md:pb-4"> Vores take på en Biedermeier-buket byder på en smuk sammensætning af luftige, vilde markblomster. En buket, der virkelig trender og for alvor bringer naturen ind i hjemmet.</p> -->
+         <!-- knap og txt -->
+         <!-- <div class="md:pt-[14px] md:pl-20">
+            <p class="font-[700] font-LivvicRegular text-darkgreyblue-500 text-20 md:pl-[38px]">fra 1.054,-</p>
+            <a href="">
+                <div class="pt-4 md:relative md:left-3">
+                    <div class="w-96 text-center relative left-8  md:relative md:left-0 md:w-[150px]">
+                        <Button 
+                            textMobile="Vælg"
+                            textDesktop="Vælg"
+                            link=""
+                            backgroundColor="#2B3D5A"
+                            textColor="#FFF"
+                            size="small md:large"
+                        />
+                    </div> -->
+                <!-- </div>
+            </a>
+        </div>
+            </div>
+         </div>
+    </div> -->
+ 
+<!-- Card 3 -->
+    <!-- <div class="card3"> -->
+
+        <!-- Card 3 -->
+         <!-- <div class="class">
+            <div class="class">
+                <Image src={scandinavian} alt='billede af lille buket blomster' class="md:w-80 md:h-80 md:rounded-40">
+            </div> -->
+            <!-- <div class="txt ">
+                <h3 class="font-WindstoneSerif md:text-30 text-blue-500 md:pl-20 md:pt-5 md:pb-5">Scandinavian</h3>
+                <p class="font-LivvicRegular text-20 text-darkgreyblue-500 md:pl-2 md:pb-4">Flowerings Scandinavian er skabt ud fra Skandinaviske tendenser med skarpe, rene linjer. Et helt enkelt udtryk, der skaber ro for øjet og definition til hjemmet. </p> -->
+                 <!-- knap og txt -->
+         <!-- <div class="md:pt-[14px] md:pl-20">
+            <p class="font-[700] font-LivvicRegular text-darkgreyblue-500 text-20 md:pl-[38px]">fra 1.084,-</p>
+            <a href="">
+                <div class="pt-4 md:relative md:left-3">
+                    <div class="w-96 text-center relative left-8  md:relative md:left-0 md:w-[150px]">
+                        <Button 
+                            textMobile="Vælg"
+                            textDesktop="Vælg"
+                            link=""
+                            backgroundColor="#2B3D5A"
+                            textColor="#FFF"
+                            size="small md:large"
+                        /> -->
+                    <!-- </div>
+                </div>
+            </a>
+        </div>
+            </div>
+         </div>
+    </div>
+</div> -->

@@ -1,0 +1,100 @@
+---
+import { Image } from 'astro:assets';
+import step1 from '../../assets/images/step1.svg'
+import step2 from '../../assets/images/step2.svg'
+import step3 from '../../assets/images/step3.svg'
+import Button from "../Button.astro";
+---
+<section class="flex flex-col mx-10 py-20 justify-center">
+
+<h2 class="steph2 text-center  text-40 md:text-50 font-WindstoneSerif text-blue-500 mb-8">Så nemt er det at få blomster leveret hurtigt</h2>
+<p class="stepp text-center  text-darkgreyblue-500 font-LivvicRegular text-18 md:text-18">Følg tre enkle trin for at skræddersy dit blomsterabonnement og få smukke blomster leveret lige til døren.</p>
+
+<div class="mx-auto flex flex-col md:flex-row justify-center text-center gap-36 text-darkgreyblue-500">
+    
+<div class="w-64 stepbilleder1">
+<Image src={step1} alt='blomst der ikke er udsprunget' class=" h-96 mx-auto"/>
+<p class="font-bold text-blue-500 mb-5">Vælg din stil</p>
+<p>Vælg den blomsterstil, der passer bedst til dig - Classic, Biedermeier eller Scandinavian.</p>
+</div>
+
+<div class="w-64 stepbilleder2">
+<Image src={step2} alt='blomst der er lidt udsprunget' class=" h-96 mx-auto"/>
+<p class="font-bold text-blue-500 mb-5">Skræddersy din levering</p>
+<p>Bestem, hvor ofte du vil have blomster leveret, og indtast din leveringsadresse.</p>
+</div>
+
+<div class="w-64 stepbilleder3">
+<Image src={step3} alt='blomst der er helt usprunget' class=" h-96 mx-auto"/>
+<p class="font-bold text-blue-500 mb-5">Modtag en overraskelse</p>
+<p>Nyd unikke buketter sammensat med sæsonens smukkeste blomster – altid leveret lige til døren.</p>
+</div>
+</div>
+
+<div class="text-center mt-12 stepknap">
+    <Button 
+      textMobile="Skræddersy dit abonnement"
+      textDesktop="Skræddersy dit blomsterabonnement her"
+      link="/abonnement" 
+      backgroundColor="#2B3D5A" 
+      textColor="#ffffff" 
+      size="small md:large"
+      additionalClasses="hover:bg-[#6D7D96] mx-auto max-w-[450px]"
+    />
+  </div>
+
+</section>
+
+<script>
+  import { inView } from "motion";
+      
+      const elementmedanimation1 = document.querySelector(".steph2");
+      
+      inView(elementmedanimation1, () => {
+      
+      elementmedanimation1.classList.add("animate__animated", "animate__fadeInUp");
+      
+      }); 
+
+      const elementmedanimation2 = document.querySelector(".stepp");
+      
+      inView(elementmedanimation2, () => {
+      
+      elementmedanimation2.classList.add("animate__animated", "animate__fadeInUp");
+      
+      }); 
+
+      const elementmedanimation3 = document.querySelector(".stepbilleder1");
+      
+      inView(elementmedanimation3, () => {
+      
+      elementmedanimation3.classList.add("animate__animated", "animate__fadeInUp");
+      
+      }); 
+
+      const elementmedanimation4 = document.querySelector(".stepbilleder2");
+      
+      inView(elementmedanimation4, () => {
+      
+      elementmedanimation4.classList.add("animate__animated", "animate__fadeInUp");
+      
+      }); 
+
+      const elementmedanimation5 = document.querySelector(".stepbilleder3");
+      
+      inView(elementmedanimation5, () => {
+      
+      elementmedanimation5.classList.add("animate__animated", "animate__fadeInUp");
+      
+      }); 
+
+      const elementmedanimation6 = document.querySelector(".stepknap");
+      
+      inView(elementmedanimation6, () => {
+      
+      elementmedanimation6.classList.add("animate__animated", "animate__fadeInUp");
+      
+      }); 
+
+
+  </script>

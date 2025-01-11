@@ -1,0 +1,134 @@
+---
+// import { animate } from '@motionone/dom'; 
+import { Image } from 'astro:assets';
+
+import dokumentation from '../../assets/images/dokumentation.webp';
+import samarbejde from '../../assets/images/samarbejde.webp';
+import vandforbrug from '../../assets/images/vandforbrug.webp';
+import arbejdsforhold from '../../assets/images/arbejdsforhold.webp';
+import emballage from '../../assets/images/emballage.webp';
+import gennemsigtighed from '../../assets/images/gennemsigtighed.webp';
+import Button from "../Button.astro";
+---
+
+<section class="bg-rosa-500 py-12 px-4">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 
+      id="section-title"
+      class="principh2 text-blue-500 text-40 md:text-50 font-WindstoneSerif mb-10 leading-tight"
+    >
+      Principper til glæde for verden
+    </h2>
+    <p 
+      id="section-description"
+      class="principp font-LivvicRegular text-18 text-darkgreyblue-500 mb-10 max-w-2xl mx-auto leading-tight"
+    >
+      Vores kamp for en bedre verden er ikke kun begrænset til vores blomsterudvalg. Tag en tur gennem vores bæredygtige principper nedenfor, og tilmeld dig vores nyhedsbrev for at følge med i vores rejse, når vi løbende indfører nye tiltag.
+    </p>
+  </div>
+
+  <!-- Grid Layout -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+    {[{
+      image: dokumentation, 
+      title: 'Dokumentation', 
+      description: 'Vi har en livscyklusanalyse, som dokumenterer at vores blomstertyper har et CO2-aftryk, der er 35% lavere end konventionelle blomster.', 
+      link: 'https://flowering.dk/wp-content/uploads/2023/05/Life-Cycle-Assessment-of-the-Production-and-Handling-of-Flowers-for-publication.pdf' 
+    },
+    { 
+      image: samarbejde, 
+      title: 'Samarbejde', 
+      description: 'Vi støtter op om socialbæredygtige organisationer.', 
+      link: null 
+    },
+    { 
+      image: vandforbrug, 
+      title: 'Vandforbrug', 
+      description: 'Med hjælp fra DTU har vi udviklet et vandfiltreringssystem, som minimerer vores vandforbrug med over 90%.', 
+      link: null 
+    },
+    { 
+      image: arbejdsforhold, 
+      title: 'Arbejdsforhold', 
+      description: 'Alle vores passionerede medarbejdere er ansat under danske arbejdsvilkår, der sikrer ordentlig løn og gode forhold.', 
+      link: null 
+    },
+    { 
+      image: emballage, 
+      title: 'Emballage', 
+      description: 'Vores blomsterbuketters emballage er minimal, da vi hverken gør brug af papkasser, cellofan eller andre unødvendigheder.', 
+      link: null 
+    },
+    { 
+      image: gennemsigtighed, 
+      title: 'Gennemsigtighed', 
+      description: 'Vi arbejder aktivt og transparent for at informere og brede kendskabet til udfordringerne i den globale blomsterindustri.', 
+      link: null 
+    }].map(({ image, title, description, link }, index) => (
+      <div class="text-center p-6 card" data-index={index}>
+        <div class="w-full">
+          <Image 
+            src={image} 
+            alt={title} 
+            class="animated-image items-center mb-10 rounded-40 mx-auto w-[70%] h-[70%] md:w-[100%] md:h-[100%] object-cover hover:scale-105 hover:rotate-2 transition-transform duration-300"
+          />
+        </div>
+        <h3 class="text-30 md:text-40 font-WindstoneSerif mb-2 text-blue-500 leading-tight">{title}</h3>
+        <p class="text-darkgreyblue-500 text-18 font-LivvicRegular leading-tight">{description}</p>
+        {link && (
+          <a 
+            href={link} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="text-blue-500 mt-2 inline-block font-LivvicRegular font-bold hover:underline"
+          >
+            Læs mere her
+          </a>
+        )}
+      </div>
+    ))}
+  </div>
+
+  <!-- CTA Knappen -->
+  <div class="principknap text-center mt-12">
+    <Button 
+      textMobile="Skræddersy dit abonnement"
+      textDesktop="Skræddersy dit blomsterabonnement her"
+      link="/abonnement" 
+      backgroundColor="#2B3D5A" 
+      textColor="#ffffff" 
+      size="small md:large"
+      additionalClasses="hover:bg-[#6D7D96] mx-auto max-w-[450px]"
+    />
+  </div>
+</section>
+
+
+<script>
+  import { inView } from "motion";
+      
+      const elementmedanimation1 = document.querySelector(".principh2");
+      
+      inView(elementmedanimation1, () => {
+      
+      elementmedanimation1.classList.add("animate__animated", "animate__fadeInUp");
+      
+      }); 
+
+      const elementmedanimation2 = document.querySelector(".principp");
+      
+      inView(elementmedanimation2, () => {
+      
+      elementmedanimation2.classList.add("animate__animated", "animate__fadeInUp");
+      
+      }); 
+
+      const elementmedanimation3 = document.querySelector(".principknap");
+      
+      inView(elementmedanimation3, () => {
+      
+      elementmedanimation3.classList.add("animate__animated", "animate__fadeInUp");
+      
+      }); 
+
+  </script>

@@ -1,0 +1,129 @@
+---
+import Button from '../components/Button.astro';
+import { Image } from 'astro:assets';
+import Nyhedsbrev1 from '../assets/images/nyhedsbrev1.png'
+import Nyhedsbrev2 from '../assets/images/nyhedsbrev2.png'
+---
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+<section class="bg-rosa-500 md:grid md:grid-cols-2 md:gap-0 pt-10 pb-20 px-5 md:px-20 md:pt-20 md:pb-20">
+    <!-- Tekst og formular til højre -->
+    <div class="flex flex-col justify-center bg-rosa-500 p-10 max-w-3xl mx-auto ">
+      <!-- Overskrift -->
+      <h2 class="brevh2 text-blue-500 text-50 font-WindstoneSerif mb-sm md:leading-tight">
+        Vil du blomstre med os?
+      </h2>
+  
+      <!-- Brødtekst -->
+      <p class="brevp text-darkgreyblue-500 font-LivvicRegular text-18 mb-sm md:pr-12">
+        Få det bedste fra Flowering direkte i din indbakke. Modtag inspiration, tips til blomsterpleje, eksklusive tilbud og nyheder om vores bæredygtige rejse.
+      </p>
+  
+      <!-- Formular -->
+      <form class="flex flex-col gap-sm md:w-80">
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Navn"
+          class="brevform1 rounded-20 border-1 border-greyblue-500 p-2 focus:ring-1 focus:ring-greyblue-600 focus:outline-none pl-6"
+        />
+  
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          class="brevform2 rounded-20 border-1 border-greyblue-500 p-2 focus:ring-1 focus:ring-greyblue-600 focus:outline-none pl-6"
+        />
+  
+           <!-- CTA Knappen -->
+           <div class="text-center mt-6 text-nowrap brevknap">
+            <Button 
+            textMobile="Tilmeld dig vores nyhedsbrev"
+            textDesktop="Tilmeld dig vores nyhedsbrev"
+            link="/baeredygtighed" 
+            backgroundColor="#6D7D96" 
+            textColor="#ffffff" 
+            size="small md:large"
+            additionalClasses="hover:bg-[#6D7D96] mx-auto ml-0"
+            />
+        </div>
+      </form>
+    </div>   
+
+    <!-- Billeder til venstre -->
+    <div class="w-full flex flex-row gap-4 justify-between">
+      <!-- Billede 1 -->
+      <div class="w-full md:w-[48%] brevbillede1">
+        <Image src={Nyhedsbrev1} alt='billede af en holdt buket' class="mt-2 rounded-40 w-full h-auto object-cover md:h-[90%] md:w-full md:object-cover md:mt-2 ">
+      </div>
+
+      <!-- Billede 2 -->
+      <div class="w-full md:w-[48%]">
+        <Image src={Nyhedsbrev2} alt='billede af pige med to buketter' class="brevbillede2 mt-16 rounded-40 w-full h-[65%] object-cover md:h-[70%] md:w-full md:object-cover md:mt-28 ">
+      </div>
+    </div>
+</section>
+
+
+<script>
+  import { inView } from "motion";
+      
+      const elementmedanimation1 = document.querySelector(".brevbillede1");
+      
+      inView(elementmedanimation1, () => {
+      
+      elementmedanimation1.classList.add("animate__animated", "animate__fadeInUp");
+      
+      }); 
+
+      const elementmedanimation2 = document.querySelector(".brevbillede2");
+      
+      inView(elementmedanimation2, () => {
+      
+      elementmedanimation2.classList.add("animate__animated", "animate__fadeInUp");
+      
+      }); 
+
+      const elementmedanimation3 = document.querySelector(".brevh2");
+      
+      inView(elementmedanimation3, () => {
+      
+      elementmedanimation3.classList.add("animate__animated", "animate__fadeInUp");
+      
+      }); 
+
+      const elementmedanimation4 = document.querySelector(".brevp");
+      
+      inView(elementmedanimation4, () => {
+      
+      elementmedanimation4.classList.add("animate__animated", "animate__fadeInUp");
+      
+      }); 
+
+      const elementmedanimation5 = document.querySelector(".brevform1");
+      
+      inView(elementmedanimation5, () => {
+      
+      elementmedanimation5.classList.add("animate__animated", "animate__fadeInUp");
+      
+      }); 
+
+      const elementmedanimation7 = document.querySelector(".brevform2");
+      
+      inView(elementmedanimation7, () => {
+      
+      elementmedanimation7.classList.add("animate__animated", "animate__fadeInUp");
+      
+      }); 
+
+      const elementmedanimation6 = document.querySelector(".brevknap");
+      
+      inView(elementmedanimation6, () => {
+      
+      elementmedanimation6.classList.add("animate__animated", "animate__fadeInUp");
+      
+      }); 
+
+  </script>

@@ -1,0 +1,95 @@
+---
+import Button from '../components/Button.astro';
+import { Image } from 'astro:assets';
+import rødblomst from '../assets/images/rødblomst.svg'
+import lyserødblomst from '../assets/images/lyserødblomst1.svg'
+---
+
+<section class="bg-beige-500 w-full md:pb-12">
+
+<div class="alt place-content-center md:flex md:flex-row">
+
+<div class="grid place-items-center pt-16 pb-10">
+    <Image src={rødblomst} alt='illustration af en rød blomst' class="ctabillede1">
+</div>
+<!-- text -->
+<div class="text-center pt-5 md:pt-24 ">
+    <h2 class="ctah2 font-WindstoneSerif text-40 md:text-50 text-blue-500 md:py-9">Din hverdag fortjener blomster</h2>
+    <p class="ctap px-24 md:pt-0 pt-8 text-18 text-darkgreyblue-500 md:py-6 md:pb-10">Vælg et af vores abonnementer, og få bæredygtige buketter leveret direkte til døren. 
+        <br> Nemt, fleksibelt og med omtanke for miljøet.</p>
+
+<div class="text-center pt-10 md:pt-0">
+    <a href="/abonnement">
+        <div class="pt-9 md:pt-0 grid place-items-center">
+            <!-- <Button variant="primary" size="large">Skræddersy dit blomsterabonnement her</Button> -->
+            <div class="ctaknap w-3/5 text-center">
+                <Button 
+                    textMobile="Bestil dit blomsterabonnement"
+                    textDesktop="Skræddersy dit blomsterabonnement her"
+                    link="/abonnement"
+                    backgroundColor="#2B3D5A"
+                    textColor="#FFF"
+                    size="small md:large"
+                />
+            </div>
+        </div>
+    </a>
+</div>
+</div>
+
+<div class="grid place-items-center pt-16 pb-16">
+    <Image src={lyserødblomst} alt='illustration af en lyserød blomst' class="ctabillede2">
+</div>
+</div>
+
+</section>
+
+<!-- mangler rigtig windstone font samt spacing -->
+
+
+<script>
+    import { inView } from "motion";
+        
+        const elementmedanimation1 = document.querySelector(".ctabillede1");
+        
+        inView(elementmedanimation1, () => {
+        
+        elementmedanimation1.classList.add("animate__animated", "animate__fadeInUp");
+        
+        }); 
+  
+        const elementmedanimation2 = document.querySelector(".ctabillede2");
+        
+        inView(elementmedanimation2, () => {
+        
+        elementmedanimation2.classList.add("animate__animated", "animate__fadeInUp");
+        
+        }); 
+  
+        const elementmedanimation3 = document.querySelector(".ctah2");
+        
+        inView(elementmedanimation3, () => {
+        
+        elementmedanimation3.classList.add("animate__animated", "animate__fadeInUp");
+        
+        }); 
+  
+        const elementmedanimation4 = document.querySelector(".ctap");
+        
+        inView(elementmedanimation4, () => {
+        
+        elementmedanimation4.classList.add("animate__animated", "animate__fadeInUp");
+        
+        }); 
+  
+
+  
+        const elementmedanimation6 = document.querySelector(".ctaknap");
+        
+        inView(elementmedanimation6, () => {
+        
+        elementmedanimation6.classList.add("animate__animated", "animate__fadeInUp");
+        
+        }); 
+  
+    </script>

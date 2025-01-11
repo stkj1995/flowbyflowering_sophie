@@ -1,0 +1,60 @@
+---
+import Button from "../Button.astro";
+---
+
+<section id="Gange" class="min-h-screen flex flex-col items-center justify-center text-center p-4">
+  <!-- Overskrift -->
+  <h1 class="text-40 font-WindstoneSerif text-blue-500">Hvor mange gange vil du have leveret?</h1>
+  <p class="text-18 font-LivvicRegular text-darkgreyblue-500 mt-2">Vælg én og klik videre</p>
+  
+  <!-- Valgmuligheder -->
+  <div class="mt-6 grid grid-cols-1 gap-5 md:gap-20 md:grid-cols-4">
+    <button class="px-12 py-4 border-2 border-denimblue-500 rounded-20 text-denimblue-500 font-bold hover:bg-greyblue-500 hover:text-white hover:border-none transition duration-200" id="button1">
+      3 gange
+    </button>
+    <button class="px-12 py-4 border-2 border-denimblue-500 rounded-20 text-denimblue-500 font-bold hover:bg-greyblue-500 hover:text-white hover:border-none transition duration-200" id="button2">
+      6 gange
+    </button>
+    <button class="px-12 py-4 border-2 border-denimblue-500 rounded-20 text-denimblue-500 font-bold hover:bg-greyblue-500 hover:text-white hover:border-none transition duration-200" id="button3">
+      9 gange
+    </button>
+    <button class="px-12 py-4 border-2 border-denimblue-500 rounded-20 text-denimblue-500 font-bold hover:bg-greyblue-500 hover:text-white hover:border-none transition duration-200" id="button4">
+      12 gange
+    </button>
+  </div>
+  
+  <!-- Videre Knap -->
+  <div class="pt-4 md:mt-8 mt-10">
+    <div class="w-36 text-center mx-auto md:w-[150px]">
+      <Button 
+        textMobile="Videre"
+        textDesktop="Videre"
+        link="#Ofte"
+        backgroundColor="#2B3D5A"
+        textColor="#FFF"
+        size="small md:large"
+      />
+    </div>
+  </div>
+</section>
+
+<script>
+  // Hent alle knapperne
+  const buttons = document.querySelectorAll('button');
+
+  // Funktion til at håndtere klik og ændre farve på knapperne
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Fjern 'active' klasse fra alle knapper
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-denimblue-500', 'text-white', 'border-none');
+        btn.classList.add('hover:bg-denimblue-500', 'hover:text-white', 'border-denimblue-500');
+      });
+
+      // Tilføj 'active' klasse til den valgte knap
+      button.classList.add('bg-denimblue-500', 'text-white', 'border-none');
+    });
+  });
+</script>
+
+

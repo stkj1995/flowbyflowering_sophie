@@ -1,0 +1,30 @@
+---
+import { Image } from 'astro:assets';
+import heroforside from '../../assets/images/heroforside.webp'
+import Button from "../Button.astro";
+import scoll_pil from '../../assets/images/scoll_pil.webp'
+---
+
+<div class="relative">
+    <div class="video">
+        <video src="https://idaemilierichter.dk/kea/15_eksamen/floweringhero.mp4" autoplay loop muted class="h-screen md:w-screen object-cover"></video>
+      </div>    
+
+<div class="absolute inset-0 md:ml-28 md:mt-20 m-20 mt-52 md:m-0">
+<h1 class="text-50 md:text-200 font-WindstoneSerif uppercase md:mb-[-130px] text-blue-500">FLOW</h1>
+<h1 class="text-50 md:text-200 font-WindstoneSerif md:mb-[-40px] mb-10 text-blue-500">By Flowering</h1>
+<h2 class="text-40 md:text-50 font-WindstoneSerif text-blue-500">Blomsterabonnementer med omtanke for miljøet</h2>
+<div class="mt-20 md:mt-12 text-center">
+    <Button 
+      textMobile="Skræddersy dit abonnement"
+      textDesktop="Skræddersy dit blomsterabonnement her"
+      link="/abonnement" 
+      backgroundColor="#2B3D5A" 
+      textColor="#ffffff" 
+      size="small md:large"
+      additionalClasses="hover:bg-[#6D7D96] max-w-[450px]"
+    />
+  </div>
+</div>
+
+</div>

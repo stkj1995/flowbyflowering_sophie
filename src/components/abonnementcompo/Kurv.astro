@@ -1,0 +1,82 @@
+---
+import { Image } from 'astro:assets';
+import Button from "../Button.astro";
+import gulblomst1 from '../../assets/images/gulblomst1.svg';
+import blåblomst from '../../assets/images/blåblomst.svg';
+---
+
+<section id="Kurv">
+    <div class="txt pl-14 md:pl-28">
+        <h2 class="text-blue-500 font-WindstoneSerif text-40 pb-5 leading-tight">Du er næsten i mål!</h2>
+        <p class="font-LivvicRegular text-darkgreyblue-500 text-18 pb-10 pr-20 leading-tight">Her kan du se en oversigt over din valg. Du har mulighed for at redigere din valg, hvis du pludseligt skifter mening.</p>
+    </div>
+
+    <!-- indkøbskurv + betalingskurv -->
+    <div class="alt mx-5 gap-10 md:px-16 flex flex-col md:flex-row ">
+        <!-- indkøbskurv -->
+        <div class="bg-greyblue-500 text-white mx-5 rounded-40 p-10 flex-2">
+            <h2 class="text-40 pb-10 font-WindstoneSerif leading-tight">Din indkøbskurv</h2>
+            <!-- indhold i kurv -->
+            <div class="gridkurv grid grid-cols-1 md:grid-cols-3 space-y-5 md:space-y-0 md:space-x-0">
+                <div class="indhold text-18 font-LivvicRegular">
+                    <p class="font-[700] pb-6">Abonnement</p>
+                    <p class="pb-3">Forudbetalt abonnement</p>
+                    <p class="pb-3">Classic</p>
+                    <p class="pb-3">Light</p>
+                    <p class="pb-3">3 gange</p>
+                    <p class="pb-3">Hver uge</p>
+                    <p class="pb-10">Ingen kort</p>
+                    <a href="" class="font-[700] md:text-18 underline hover:underline">Rediger valg</a>
+                </div>
+                <!-- antal -->
+                <div class="flex justify-between md:justify-normal md:flex-col md:pl-52">
+                    <p class="font-[700] pb-6">Antal</p>
+                    <p>1</p>
+                </div>
+                <!-- pris - skal rykkes mere mod venstre på mobil -->
+                <div class="flex justify-between md:justify-normal md:flex-col pl-0 pt-10 md:pt-0 md:pl-32">
+                    <p class="font-[700] text-18">Pris:</p>
+                    <p class="md:pt-6">1.084,-</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- købsoversigt -->
+        <div class="bg-greyblue-500 text-white mx-5 rounded-40 p-10 space-y-3 flex-1">
+            <h2 class="text-40 font-WindstoneSerif pb-10">Købsoversigt</h2>
+            <div class="flex justify-between">
+                <p class="font-LivvicRegular font-[700]">Subtotal</p>
+                <p class="mb-40">1.084,-</p>
+            </div>
+            <div class="">
+                <div class="flex justify-between">
+                <p class="font-LivvicRegular font-[700]">Total</p>
+                <p>1.084,-</p>
+            </div>
+                <p class="flex justify-end">(inkluderer 216,8,- moms)</p>
+            </div>
+            <div class="">
+                <a href="">
+                    <div class="pt-5">
+                        <div class="w-80 text-center align-bottom md:w-[330px]">
+                            <Button 
+                                textMobile="Gå til betaling"
+                                textDesktop="Gå til betaling"
+                                link=""
+                                backgroundColor="#ffffff"
+                                textColor="#00054E"
+                                size="small md:large"
+                            />
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+   
+  <di class="flex justify-center gap-20 my-10">
+        <Image src={gulblomst1} alt="illustration af en gul blomst" class="mt-32" />
+        <Image src={blåblomst} alt="illustration af en blå blomst" class="" />
+    </div>
+</section>

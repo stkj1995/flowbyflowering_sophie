@@ -1,0 +1,63 @@
+---
+import { Image } from 'astro:assets';
+import introbillede from '../../assets/images/introforside.webp'
+import Button from "../Button.astro";
+---
+
+<section class="flex flex-col md:flex-row py-20 md:px-32 gap-28 items-center">
+<div>
+<Image src={introbillede} alt='en flot buket' class=" introbillede h-[450px] w-[450px] object-cover rounded-3xl"/>
+</div>
+
+<div class="mx-5 md:w-2/4">
+<h2 class="introh2 text-left text-40 md:text-50 font-WindstoneSerif text-blue-500 mb-8">Bliv en del af en bæredygtig blomsterverden</h2>
+<p class="introp text-left  text-darkgreyblue-500 font-LivvicRegular text-18 md:text-18">Velkommen til Flow by Flowering – din indgang til en verden af smukke og bæredygtige blomster. Vi gør det enkelt for dig at nyde friske buketter året rundt med vores fleksible abonnementsløsninger, der er skabt med respekt for naturen. På vores side kan du bestille blomster direkte til døren, udforske vores dedikation til bæredygtighed og dykke ned i historien bag Flowering.dk. Vi tror på, at blomster ikke kun skal sprede glæde, men også gøre en forskel for vores fælles fremtid.</p>
+<div class="text-center mt-10 text-nowrap w-80 introknap">
+    <Button 
+    textMobile="Læs mere om vores historie"
+    textDesktop="Læs mere om vores historie"
+    link="/historie" 
+    backgroundColor="#6D7D96" 
+    textColor="#ffffff" 
+    size="small md:large"
+    additionalClasses="hover:bg-[#6D7D96] mx-auto ml-0"
+    />
+</div>
+</section>
+
+<script>
+    import { inView } from "motion";
+        
+        const elementmedanimation1 = document.querySelector(".introbillede");
+        
+        inView(elementmedanimation1, () => {
+        
+        elementmedanimation1.classList.add("animate__animated", "animate__fadeInUp");
+        
+        }); 
+
+        const elementmedanimation2 = document.querySelector(".introh2");
+        
+        inView(elementmedanimation2, () => {
+        
+        elementmedanimation2.classList.add("animate__animated", "animate__fadeInUp");
+        
+        }); 
+
+        const elementmedanimation3 = document.querySelector(".introp");
+        
+        inView(elementmedanimation3, () => {
+        
+        elementmedanimation3.classList.add("animate__animated", "animate__fadeInUp");
+        
+        }); 
+
+        const elementmedanimation4 = document.querySelector(".introknap");
+        
+        inView(elementmedanimation4, () => {
+        
+        elementmedanimation4.classList.add("animate__animated", "animate__fadeInUp");
+        
+        }); 
+
+    </script>

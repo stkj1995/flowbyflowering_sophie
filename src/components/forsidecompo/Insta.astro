@@ -1,0 +1,64 @@
+---
+import { Image } from 'astro:assets';
+import insta1 from '../../assets/images/insta1.webp'
+import insta2 from '../../assets/images/insta2.webp'
+import insta3 from '../../assets/images/insta3.webp'
+import insta4 from '../../assets/images/insta4.webp'
+import insta5 from '../../assets/images/insta5.webp'
+import insta6 from '../../assets/images/insta6.webp'
+import insta7 from '../../assets/images/insta7.webp'
+import insta8 from '../../assets/images/insta8.webp'
+import insta9 from '../../assets/images/insta9.webp'
+import insta10 from '../../assets/images/insta10.webp'
+---
+
+<section class="flex flex-col items-center md:items-start  py-20 md:px-32">
+    <h2 class="instah2 text-center md:text-left text-40 md:text-50 font-WindstoneSerif text-blue-500 mb-8">Følg med på vores instagram</h2>
+    <p class="instap text-center md:text-left  text-darkgreyblue-500 font-LivvicRegular text-18 md:text-18">Her poster vi ofte om vores buketter, vigtige tips, nyeste blomster, samarbejder og projekter m.m.</p>
+
+<div class="grid md:grid-cols-5 md:grid-rows-2 gap-5 mt-10 grid-cols-2 grid-rows-5 justify-center">
+   <a href="https://www.instagram.com/floweringdk/" target="_blank" > <Image src={insta1} alt='første billede på instagram' class="insta1 h-[200px] md:h-[250px] w-[200px] md:w-[250px] object-cover rounded-3xl transition-transform duration-300 transform hover:scale-105"/></a>
+    <a href="https://www.instagram.com/floweringdk/" target="_blank" ><Image src={insta2} alt='andet billede på instagram' class="insta2 h-[200px] md:h-[250px] w-[200px] md:w-[250px] object-cover rounded-3xl transition-transform duration-300 transform hover:scale-105"/></a>
+    <a href="https://www.instagram.com/floweringdk/" target="_blank"><Image src={insta3} alt='tredje billede på instagram' class="insta3 h-[200px] md:h-[250px] w-[200px] md:w-[250px] object-cover rounded-3xl transition-transform duration-300 transform hover:scale-105"/></a>
+    <a href="https://www.instagram.com/floweringdk/" target="_blank"><Image src={insta4} alt='fjerde billede på instagram' class="insta4 h-[200px] md:h-[250px] w-[200px] md:w-[250px] object-cover rounded-3xl transition-transform duration-300 transform hover:scale-105"/></a>
+    <a href="https://www.instagram.com/floweringdk/" target="_blank"><Image src={insta5} alt='femte billede på instagram' class="insta5 h-[200px] md:h-[250px] w-[200px] md:w-[250px] object-cover rounded-3xl transition-transform duration-300 transform hover:scale-105"/></a>
+    <a href="https://www.instagram.com/floweringdk/" target="_blank"><Image src={insta6} alt='sjette billede på instagram' class="insta6 h-[200px] md:h-[250px] w-[200px] md:w-[250px] object-cover rounded-3xl transition-transform duration-300 transform hover:scale-105"/></a>
+    <a href="https://www.instagram.com/floweringdk/" target="_blank"><Image src={insta7} alt='syvende billede på instagram' class="insta7 h-[200px] md:h-[250px] w-[200px] md:w-[250px] object-cover rounded-3xl transition-transform duration-300 transform hover:scale-105"/></a>
+    <a href="https://www.instagram.com/floweringdk/" target="_blank"><Image src={insta8} alt='ottende billede på instagram' class="insta8 h-[200px] md:h-[250px] w-[200px] md:w-[250px] object-cover rounded-3xl transition-transform duration-300 transform hover:scale-105"/></a>
+    <a href="https://www.instagram.com/floweringdk/" target="_blank"><Image src={insta9} alt='niende billede på instagram' class="insta9 h-[200px] md:h-[250px] w-[200px] md:w-[250px] object-cover rounded-3xl transition-transform duration-300 transform hover:scale-105"/></a>
+    <a href="https://www.instagram.com/floweringdk/" target="_blank"><Image src={insta10} alt='tiende billede på instagram' class="insta10 h-[200px] md:h-[250px] w-[200px] md:w-[250px] object-cover rounded-3xl transition-transform duration-300 transform hover:scale-105"/></a>
+
+</div>
+
+</section>
+
+<script>
+    import { inView } from "motion";
+    
+    // Iterer over de 10 elementer og tilføj animation
+    for (let i = 1; i <= 10; i++) {
+        const element = document.querySelector(`.insta${i}`);
+        
+        if (element) {
+            inView(element, () => {
+                element.classList.add("animate__animated", "animate__fadeInUp");
+            });
+        }
+    }
+
+    const elementmedanimation1 = document.querySelector(".instah2");
+        
+        inView(elementmedanimation1, () => {
+        
+        elementmedanimation1.classList.add("animate__animated", "animate__fadeInUp");
+        
+        }); 
+
+        const elementmedanimation2 = document.querySelector(".instap");
+        
+        inView(elementmedanimation2, () => {
+        
+        elementmedanimation2.classList.add("animate__animated", "animate__fadeInUp");
+        
+        }); 
+    </script>

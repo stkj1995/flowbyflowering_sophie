@@ -1,0 +1,139 @@
+---
+import Button from '../Button.astro';
+
+---
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+
+<section class="bg-beige-500 md:pt-20 md:pb-20 flex justify-center flex-col md:gap-0 pt-20 pb-20 font-WindstoneSerif">
+    <h2 class="typerh2 text-blue-500 text-center md:text-left text-50 font-WindstoneSerif md:ml-24 my-sm">Vores blomstertyper</h2>
+
+    <div class="flex flex-col justify-center md:flex-row md:gap-28 md:px-20">
+        
+        <!-- Sektion 1 -->
+        <div class="typer1 w-96 mx-auto md:m-6 my-sm d:my-sm" x-data="{ open: false }">
+            <!-- Overskrift -->
+            <h3 class="text-md text-center text-blue-500 sm:text-lg text-30 md:text-40 md:text-left font-WindstoneSerif mb-sm md:mb-m md:leading-tight text-nowrap">
+                Danske blomster
+            </h3>
+
+            <!-- Kort Brødtekst -->
+            <p class="text-darkgreyblue-500 px-5 md:px-0 text-18 md:text-18 text-center md:text-left sm:text-m font-LivvicRegular">
+                Ved at vælge dansk og lokalt minimerer vi transporten fra jord til bord. Vi prioriterer, at blomsterne dyrkes på friland uden brug af kunstgødning og sprøjtemidler.
+            </p>
+
+            <!-- Ekstra tekst (vises lige under brødteksten) -->
+            <div x-show="open" x-transition class="overflow-hidden mt-2">
+                <p class="text-darkgreyblue-500 px-5 md:px-0 text-18 md:text-18 text-center md:text-left sm:text-m font-LivvicRegular">
+                    På den måde passer vi bedst muligt på vores jordklode.
+                </p>
+            </div>
+
+            <!-- Læs mere-knap (CTA styling) -->
+            <div class="text-center md:text-left mt-4">
+                <button @click="open = !open"
+                    class="bg-greyblue-500 text-white text-center rounded-20 transition-all duration-300 ease-in-out px-4 py-2 md:px-6 md:py-3 font-LivvicRegular font-bold text-16 md:text-18 mx-auto md:ml-0 block max-w-[450px]">
+                    <span x-text="open ? 'Læs mindre' : 'Læs mere'"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Sektion 2 -->
+        <div class="typer2 w-96 mx-auto md:m-0 my-sm md:my-sm" x-data="{ open: false }">
+            <!-- Overskrift -->
+            <h3 class="text-md text-center text-blue-500 sm:text-lg text-30 md:text-40 md:text-left font-WindstoneSerif mb-sm md:mb-m md:leading-tight text-nowrap">
+                Friske overskudsblomster
+            </h3>
+        
+            <!-- Kort Brødtekst -->
+            <p class="text-darkgreyblue-500 px-5 md:px-0 text-18 md:text-18 text-center md:text-left sm:text-m font-LivvicRegular">
+                For at undgå unødigt blomsterspild har vi eksklusive aftaler med blomster-transportører, som forhandler blomster til fysiske blomsterbutikker.
+            </p>
+        
+            <!-- Ekstra tekst (vises lige under brødteksten) -->
+            <div x-show="open" x-transition class="overflow-hidden mt-2">
+                <p class="text-darkgreyblue-500 px-5 md:px-0 text-18 md:text-18 text-center md:text-left sm:text-m font-LivvicRegular">
+                    Hos blomstertransportørerne er salget ofte mindre end lageret, hvilket resulterer i, at de ellers friske blomster, som ikke bliver solgt, smides ud. Derfor er det vores fornemmeste opgave at anvende de overskudsblomster, der stadig er friske som komponent til vores miljøbuket.
+                </p>
+            </div>
+        
+            <!-- Læs mere-knap (CTA styling) -->
+            <div class="text-center md:text-left mt-4">
+                <button @click="open = !open"
+                    class="bg-greyblue-500 text-white text-center rounded-20 transition-all duration-300 ease-in-out px-4 py-2 md:px-6 md:py-3 font-LivvicRegular font-bold text-16 md:text-18 mx-auto md:ml-0 block max-w-[450px]">
+                    <span x-text="open ? 'Læs mindre' : 'Læs mere'"></span>
+                </button>
+            </div>
+        </div>
+        
+
+        <!-- Sektion 3 -->
+        <div class="typer3 w-96 mx-auto md:m-0 my-sm md:my-sm" x-data="{ open: false }">
+            <!-- Overskrift -->
+            <h3 class="text-md text-center text-blue-500 sm:text-lg text-30 md:text-40 md:text-left font-WindstoneSerif mb-sm md:mb-m md:leading-tight text-nowrap">
+                Certificerede blomster
+            </h3>
+        
+            <!-- Kort Brødtekst -->
+            <p class="text-darkgreyblue-500 px-5 md:px-0 text-18 md:text-18 text-center md:text-left sm:text-m font-LivvicRegular">
+                Vi supplerer vores udvalg med blomster fra miljøcertificerede gartnerier, som bliver tjekket for deres brug af kunstgødning, sprøjtemidler, affaldssortering,
+            </p>
+        
+            <!-- Ekstra tekst (vises lige under brødteksten) -->
+            <div x-show="open" x-transition class="overflow-hidden mt-2">
+                <p class="text-darkgreyblue-500 px-5 md:px-0 text-18 md:text-18 text-center md:text-left sm:text-m font-LivvicRegular">
+                    vandspild og ikke mindst arbejdsvilkårene for deres ansatte. Disse gartnerier findes forskellige steder i verden, og ofte i klimaer hvor det er mest naturligt at dyrke afskårne blomster. Vi prioriterer følgende certificeringer: BIO, MPS, GLOBAL G.A.P, FLORVERDE.
+                </p>
+            </div>
+        
+            <!-- Læs mere-knap (CTA styling) -->
+            <div class="text-center md:text-left mt-4">
+                <button @click="open = !open"
+                    class="bg-greyblue-500 text-white text-center rounded-20 transition-all duration-300 ease-in-out px-4 py-2 md:px-6 md:py-3 font-LivvicRegular font-bold text-16 md:text-18 mx-auto md:ml-0 block max-w-[450px]">
+                    <span x-text="open ? 'Læs mindre' : 'Læs mere'"></span>
+                </button>
+            </div>
+        </div>        
+    </div>
+</section>
+
+
+<script>
+    import { inView } from "motion";
+        
+        const elementmedanimation1 = document.querySelector(".typerh2");
+        
+        inView(elementmedanimation1, () => {
+        
+        elementmedanimation1.classList.add("animate__animated", "animate__fadeInUp");
+        
+        }); 
+  
+        const elementmedanimation2 = document.querySelector(".typer1");
+        
+        inView(elementmedanimation2, () => {
+        
+        elementmedanimation2.classList.add("animate__animated", "animate__fadeInUp");
+        
+        }); 
+  
+        const elementmedanimation3 = document.querySelector(".typer2");
+        
+        inView(elementmedanimation3, () => {
+        
+        elementmedanimation3.classList.add("animate__animated", "animate__fadeInUp");
+        
+        }); 
+  
+        const elementmedanimation4 = document.querySelector(".typer3");
+        
+        inView(elementmedanimation4, () => {
+        
+        elementmedanimation4.classList.add("animate__animated", "animate__fadeInUp");
+        
+        }); 
+  
+    
+  
+  
+    </script>

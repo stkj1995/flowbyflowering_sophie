@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 286">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #009a23;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-5 {
+        stroke: #009a28;
+      }
+
+      .cls-2 {
+        stroke: #007210;
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+        stroke-width: 3px;
+      }
+
+      .cls-3 {
+        fill: #007f08;
+        stroke: #007f08;
+      }
+
+      .cls-4 {
+        stroke: #005d2d;
+      }
+
+      .cls-5 {
+        fill: #009a28;
+      }
+
+      .cls-6 {
+        fill: #8b5bf9;
+        stroke: #8b5bf9;
+      }
+    </style>
+  </defs>
+  <g id="Layer_34" data-name="Layer 34">
+    <path class="cls-2" d="M49.5,281.5c3.41-7.94,8.25-19.98,13-35,6.22-19.65,8.69-33.05,16-71,11.42-59.3,10.1-51.1,12-62,3.68-21.08,8-48.17,12-80"/>
+    <path class="cls-4" d="M64.5,282.5c.49-7.03,1.01-17.02,1-29,0-8.11-.25-31.83-7-77-3.9-26.09-7.87-45.33-13-70-4.96-23.85-9.56-43.71-13-58"/>
+  </g>
+  <g id="Layer_35" data-name="Layer 35">
+    <path class="cls-5" d="M64.5,232.5c-1.46.84-7.47-7.04-12-13-14.09-18.52-21.97-34.76-24-39C18.76,160.15.42,119.04,3.5,117.5c1.53-.76,7.6,8.59,15,20,10.09,15.54,17.57,29.6,26,47,9.59,19.79,22.54,46.54,20,48Z"/>
+    <path class="cls-1" d="M65.5,236.5c2.64,1.66,15.29-14.11,16-15,15.3-19.2,22.56-38.43,26-49,9.8-30.08,11.93-61.35,9-62-.52-.12-1.37.72-5,9-8.79,20.01-10.13,29.35-16,45-5.7,15.22-12.82,28.77-14,31-2.46,4.66-6.59,12.12-11,23-3.12,7.7-6.83,16.84-5,18Z"/>
+    <circle class="cls-6" cx="45.5" cy="98.5" r="2"/>
+    <ellipse class="cls-6" cx="51.46" cy="92.55" rx="1.97" ry="2.03" transform="translate(-3.29 1.91) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="32.69" cy="90.02" rx="1.97" ry="2.03" transform="translate(-3.21 1.23) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="35.69" cy="97.02" rx="1.97" ry="2.03" transform="translate(-3.46 1.35) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="45.69" cy="41.02" rx="1.97" ry="2.03" transform="translate(-1.44 1.67) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="47.69" cy="49.02" rx="1.97" ry="2.03" transform="translate(-1.73 1.75) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="51.69" cy="60.02" rx="1.97" ry="2.03" transform="translate(-2.12 1.9) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="55.69" cy="73.02" rx="1.97" ry="2.03" transform="translate(-2.59 2.05) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="54.69" cy="83.02" rx="1.97" ry="2.03" transform="translate(-2.95 2.02) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="24.69" cy="60.02" rx="1.97" ry="2.03" transform="translate(-2.14 .93) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="27.69" cy="69.02" rx="1.97" ry="2.03" transform="translate(-2.46 1.04) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="30.69" cy="84.02" rx="1.97" ry="2.03" transform="translate(-3 1.16) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="35.69" cy="24.02" rx="1.97" ry="2.03" transform="translate(-.84 1.3) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="25.69" cy="24.02" rx="1.97" ry="2.03" transform="translate(-.85 .94) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="20.69" cy="35.02" rx="1.97" ry="2.03" transform="translate(-1.25 .77) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="19.69" cy="43.02" rx="1.97" ry="2.03" transform="translate(-1.53 .74) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="21.69" cy="54.02" rx="1.97" ry="2.03" transform="translate(-1.93 .81) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="25.69" cy="80.02" rx="1.97" ry="2.03" transform="translate(-2.86 .98) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="16.69" cy="60.02" rx="1.97" ry="2.03" transform="translate(-2.15 .64) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="19.69" cy="72.02" rx="1.97" ry="2.03" transform="translate(-2.58 .75) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="41.69" cy="67.02" rx="1.97" ry="2.03" transform="translate(-2.38 1.54) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="25.69" cy="41.02" rx="1.97" ry="2.03" transform="translate(-1.46 .95) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="41.69" cy="50.02" rx="1.97" ry="2.03" transform="translate(-1.77 1.53) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="44.69" cy="60.02" rx="1.97" ry="2.03" transform="translate(-2.13 1.65) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="48.69" cy="67.02" rx="1.97" ry="2.03" transform="translate(-2.38 1.79) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="48.69" cy="75.02" rx="1.97" ry="2.03" transform="translate(-2.67 1.8) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="48.69" cy="82.02" rx="1.97" ry="2.03" transform="translate(-2.92 1.8) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="45.69" cy="88.02" rx="1.97" ry="2.03" transform="translate(-3.13 1.7) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="40.69" cy="93.02" rx="1.97" ry="2.03" transform="translate(-3.32 1.52) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="38.69" cy="87.02" rx="1.97" ry="2.03" transform="translate(-3.1 1.45) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="34.69" cy="70.02" rx="1.97" ry="2.03" transform="translate(-2.49 1.29) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="35.69" cy="80.02" rx="1.97" ry="2.03" transform="translate(-2.85 1.33) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="31.69" cy="62.02" rx="1.97" ry="2.03" transform="translate(-2.21 1.18) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="28.69" cy="54.02" rx="1.97" ry="2.03" transform="translate(-1.92 1.07) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="30.69" cy="76.02" rx="1.97" ry="2.03" transform="translate(-2.71 1.15) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="26.69" cy="48.02" rx="1.97" ry="2.03" transform="translate(-1.71 .99) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="41.69" cy="74.02" rx="1.97" ry="2.03" transform="translate(-2.63 1.55) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="24.69" cy="74.02" rx="1.97" ry="2.03" transform="translate(-2.64 .94) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="22.69" cy="66.02" rx="1.97" ry="2.03" transform="translate(-2.36 .86) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="42.69" cy="81.02" rx="1.97" ry="2.03" transform="translate(-2.88 1.59) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="37.69" cy="60.02" rx="1.97" ry="2.03" transform="translate(-2.13 1.39) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="34.69" cy="54.02" rx="1.97" ry="2.03" transform="translate(-1.92 1.28) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="34.69" cy="47.02" rx="1.97" ry="2.03" transform="translate(-1.67 1.28) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="32.69" cy="39.02" rx="1.97" ry="2.03" transform="translate(-1.38 1.2) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="28.69" cy="32.02" rx="1.97" ry="2.03" transform="translate(-1.13 1.05) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="36.69" cy="33.02" rx="1.97" ry="2.03" transform="translate(-1.16 1.34) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="38.69" cy="42.02" rx="1.97" ry="2.03" transform="translate(-1.49 1.42) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="97.45" cy="30.41" rx="1.97" ry="2.03" transform="translate(-1.03 3.52) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="106.45" cy="28.41" rx="1.97" ry="2.03" transform="translate(-.95 3.84) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="100.45" cy="24.41" rx="1.97" ry="2.03" transform="translate(-.81 3.63) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="113.45" cy="27.41" rx="1.97" ry="2.03" transform="translate(-.91 4.1) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="109.45" cy="22.41" rx="1.97" ry="2.03" transform="translate(-.73 3.95) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="106.45" cy="12.41" rx="1.97" ry="2.03" transform="translate(-.38 3.83) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="115.45" cy="33.41" rx="1.97" ry="2.03" transform="translate(-1.13 4.17) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="110.45" cy="43.41" rx="1.97" ry="2.03" transform="translate(-1.49 4) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="104.45" cy="18.41" rx="1.97" ry="2.03" transform="translate(-.59 3.77) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="93.45" cy="35.41" rx="1.97" ry="2.03" transform="translate(-1.21 3.38) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="82.45" cy="41.41" rx="1.97" ry="2.03" transform="translate(-1.44 2.99) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="85.45" cy="49.41" rx="1.97" ry="2.03" transform="translate(-1.72 3.1) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="85.45" cy="57.41" rx="1.97" ry="2.03" transform="translate(-2.01 3.11) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="84.45" cy="33.41" rx="1.97" ry="2.03" transform="translate(-1.15 3.06) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="87.45" cy="26.41" rx="1.97" ry="2.03" transform="translate(-.89 3.16) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="93.45" cy="24.41" rx="1.97" ry="2.03" transform="translate(-.82 3.37) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="98.45" cy="18.41" rx="1.97" ry="2.03" transform="translate(-.6 3.55) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="100.45" cy="10.41" rx="1.97" ry="2.03" transform="translate(-.31 3.62) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="106.45" cy="5.41" rx="1.97" ry="2.03" transform="translate(-.13 3.83) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="112.45" cy="11.41" rx="1.97" ry="2.03" transform="translate(-.34 4.05) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="114.45" cy="19.41" rx="1.97" ry="2.03" transform="translate(-.62 4.13) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="119.45" cy="26.41" rx="1.97" ry="2.03" transform="translate(-.87 4.31) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="117.45" cy="39.41" rx="1.97" ry="2.03" transform="translate(-1.34 4.25) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="117.45" cy="48.41" rx="1.97" ry="2.03" transform="translate(-1.66 4.25) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="115.45" cy="59.41" rx="1.97" ry="2.03" transform="translate(-2.06 4.19) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="115.45" cy="69.41" rx="1.97" ry="2.03" transform="translate(-2.42 4.19) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="107.45" cy="80.41" rx="1.97" ry="2.03" transform="translate(-2.82 3.91) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="100.45" cy="87.41" rx="1.97" ry="2.03" transform="translate(-3.08 3.67) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="82.45" cy="63.41" rx="1.97" ry="2.03" transform="translate(-2.23 3) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="87.45" cy="81.41" rx="1.97" ry="2.03" transform="translate(-2.87 3.2) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="91.45" cy="90.41" rx="1.97" ry="2.03" transform="translate(-3.19 3.35) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="88.46" cy="73.79" rx="1.97" ry="2.03" transform="translate(-2.6 3.23) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="95.46" cy="72.79" rx="1.97" ry="2.03" transform="translate(-2.55 3.48) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="91.46" cy="59.79" rx="1.97" ry="2.03" transform="translate(-2.09 3.33) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="108.46" cy="57.79" rx="1.97" ry="2.03" transform="translate(-2.01 3.94) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="98.46" cy="52.79" rx="1.97" ry="2.03" transform="translate(-1.83 3.57) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="91.46" cy="51.79" rx="1.97" ry="2.03" transform="translate(-1.8 3.32) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="111.46" cy="49.79" rx="1.97" ry="2.03" transform="translate(-10.42 42.94) rotate(-20.86)"/>
+    <ellipse class="cls-6" cx="106.46" cy="48.79" rx="1.97" ry="2.03" transform="translate(-1.68 3.86) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="99.46" cy="46.79" rx="1.97" ry="2.03" transform="translate(-1.62 3.61) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="92.46" cy="45.79" rx="1.97" ry="2.03" transform="translate(-1.59 3.35) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="103.46" cy="40.79" rx="1.97" ry="2.03" transform="translate(-1.4 3.74) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="108.46" cy="35.79" rx="1.97" ry="2.03" transform="translate(-1.22 3.92) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="102.46" cy="33.79" rx="1.97" ry="2.03" transform="translate(-1.15 3.7) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="88.46" cy="39.79" rx="1.97" ry="2.03" transform="translate(-1.37 3.21) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="96.46" cy="40.79" rx="1.97" ry="2.03" transform="translate(-1.4 3.49) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="91.46" cy="29.79" rx="1.97" ry="2.03" transform="translate(-1.01 3.31) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="105.68" cy="72.96" rx="1.97" ry="2.03" transform="translate(-2.55 3.85) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="109.68" cy="68.96" rx="1.97" ry="2.03" transform="translate(-2.41 3.99) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="100.68" cy="67.96" rx="1.97" ry="2.03" transform="translate(-2.38 3.66) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="105.68" cy="63.96" rx="1.97" ry="2.03" transform="translate(-2.23 3.84) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="97.68" cy="62.96" rx="1.97" ry="2.03" transform="translate(-2.2 3.55) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="103.68" cy="54.96" rx="2.03" ry="1.97" transform="translate(-10.48 82.12) rotate(-41.31)"/>
+    <ellipse class="cls-6" cx="99.68" cy="81.96" rx="1.97" ry="2.03" transform="translate(-2.88 3.64) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="93.68" cy="79.96" rx="1.97" ry="2.03" transform="translate(-2.81 3.42) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="100.68" cy="75.96" rx="1.97" ry="2.03" transform="translate(-2.67 3.67) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="111.68" cy="62.96" rx="1.97" ry="2.03" transform="translate(-2.19 4.05) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="92.68" cy="67.96" rx="1.97" ry="2.03" transform="translate(-2.38 3.37) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="87.68" cy="63.96" rx="1.97" ry="2.03" transform="translate(-2.24 3.19) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="83.68" cy="69.96" rx="1.97" ry="2.03" transform="translate(-2.46 3.05) rotate(-2.06)"/>
+    <ellipse class="cls-6" cx="115.68" cy="53.96" rx="1.97" ry="2.03" transform="translate(-1.86 4.19) rotate(-2.06)"/>
+  </g>
+  <g id="Layer_36" data-name="Layer 36">
+    <path class="cls-3" d="M62.5,228.5c-.28.22-7.14-7.64-14-17-7.79-10.63-13.34-20.17-17-27-7.92-14.79-8.52-19.78-18-41-1.54-3.44-3.02-7.29-6-15-1.54-3.98-2.23-5.89-2-6,.54-.26,5.78,9.59,6,10,7.54,14.2,9.72,23.06,14,34,5.43,13.88,11.31,23.6,17,33,10.64,17.59,20.33,28.74,20,29Z"/>
+    <path class="cls-3" d="M68.5,232.5c-.05-.05,6.46-6.27,13-15,7.3-9.73,14.11-21.86,21-43,10.66-32.71,12.08-58.12,13-58,.65.08-.11,12.85-2,25-2.61,16.77-6.9,29.31-9,35-2.84,7.72-6.94,18.64-15,31-9.93,15.24-20.94,25.06-21,25Z"/>
+  </g>
+</svg>
