@@ -70,13 +70,13 @@ export default {
           xl: "120px", // Evt. 120x spacing imellem sektioner
         },
   
-        /* Fonte */
+        /* Fonte - livvic-styles er udkommenteret for at få livvic til at virke*/
         fontFamily: {
           WindstoneSerif: ["WindstoneSerif", "serif"], //H1, H1 uppercase, H2, H3
-          LivvicRegular: ["Regular", "sans-serif"], //Paragraph generelt
-          LivvicMedium: ["Medium", "sans-serif"], //Paragraph medium (steps i card)
-          LivvicBold: ["Bold", "sans-serif"], //Paragraph bold (highlights i tekst)
-          LivvicItalic: ["Italic", "sans-serif"], //Paragraph italic (citat i anmeldelser)
+          Livvic: ["Livvic", "sans-serif"], //Paragraph generelt
+          // LivvicMedium: ["Medium", "sans-serif"], //Paragraph medium (steps i card)
+          // LivvicBold: ["Bold", "sans-serif"], //Paragraph bold (highlights i tekst)
+          // LivvicItalic: ["Italic", "sans-serif"], //Paragraph italic (citat i anmeldelser)
         },
   
         /* Typografisk hierarki */

@@ -20,31 +20,34 @@
 /* Livvic Font */
 @font-face {
     font-family: 'Livvic';
-    src: url('/fonts/Livvic-Regular.woff') format('woff'); /* skriv: font-LivvicRegular */
+    src: url('/fonts/Livvic-Regular.woff') format('woff'); /*regular livvic font*/
     font-weight: 400;
     font-style: normal; 
 }
 
-@font-face {
+
+/*nedenstående har jeg udkommenteret i denne kopi for at få livvic-font til at blive vist*/
+
+/* @font-face {
     font-family: 'Livvic';
-    src: url('/fonts/Livvic-Medium.woff') format('woff'); /* skriv: font-LivvicMedium */
+    src: url('/fonts/Livvic-Medium.woff') format('woff'); 
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Livvic';
-    src: url('/fonts/Livvic-Bold.woff') format('woff'); /* skriv: font-LivvicBold */
+    src: url('/fonts/Livvic-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Livvic';
-    src: url('/fonts/Livvic-Italic.woff') format('woff'); /* skriv: font-LivvicItalic */
+    src: url('/fonts/Livvic-Italic.woff') format('woff'); 
     font-weight: 400;
     font-style: italic;
-}
+} */
 
   .custom-padding {
       @apply p-xs md:p-lg;
